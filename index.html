@@ -189,13 +189,12 @@
 
           <script>
             const mainSlider = new Swiper('.slider-main', {
-              slidersPerView: 1,
+              slidesPerView: 1,
               loop: false,
 
               on: {
                 init: function () {
                   this.el.style.opacity = 1
-                  console.log(this);
                 }
               },
 
@@ -204,9 +203,9 @@
                 type: 'fraction'
               },
 
-              // autoplay: {
-              //   delay: 3000
-              // }
+              autoplay: {
+                delay: 3000
+              }
             });
           </script>
         </div>
@@ -214,7 +213,7 @@
           <div class="slider-section-podbor">
             <form class="customize-form">
               <div class="customize-form-select">
-                <a href="javascript:void(0)" class="customize-form-item active">
+                <a href="javascript:void(0)" class="customize-form-item">
                   <span>Шины</span>
                 </a>
                 <a href="javascript:void(0)" class="customize-form-item">
@@ -222,29 +221,50 @@
                 </a>
               </div>
               <div class="customize-form-select customize-form-select-by">
-                <a href="javascript:void(0)" class="customize-form-item active">
+                <a href="javascript:void(0)" class="customize-form-item">
                   <span>По параметрам</span> <img class="customize-form-hint" src="images/hint.svg" data-toggle="tooltip" data-placement="bottom" title="Текст подсказки" alt="">
                 </a>
-                <a href="javascript:void(0)" class="customize-form-item">
+                <a href="javascript:void(0)" class="customize-form-item active">
                   <span>По автомобилю</span>
                 </a>
               </div>
 
-              <div class="form-props form-props-1">
+              <div class="form-props form-props-1" style="display: none;">
                 <div class="form-props-row form-props-select">
-                  <div class="form-props-list">
-                    <div class="form-props-current" data-placeholder="Ширина, мм">Ширина, мм</div>
-                    <!-- <div class="form-props-drop"></div> -->
+                  <div class="form-props-list" data-divider="/">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Ширина, мм">Ширина, мм</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
                   </div>
-                  <span>/</span>
-                  <div class="form-props-list active">
-                    <div class="form-props-current" data-placeholder="Высота, %">Высота, %</div>
-                    <!-- <div class="form-props-drop"></div> -->
+                  
+                  <div class="form-props-list" data-divider="R">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Высота, %">Высота, %</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
                   </div>
-                  <span>R</span>
+                  
                   <div class="form-props-list">
-                    <div class="form-props-current" data-placeholder="Диаметр, “">Диаметр, “</div>
-                    <!-- <div class="form-props-drop"></div> -->
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Диаметр, “">Диаметр, “</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-props-row form-props-check">
@@ -264,12 +284,72 @@
                     <input type="checkbox" class="form-props-check-type">
                     <div class="form-props-check-name">Всесезонные</div>
                   </label>
-                </div>
+                </div> 
+              </div>
 
-                <div class="customize-form-footer">
-                  <button class="button-default" type="submit">Подобрать</button>
-                  <a href="" class="button-default button-menu">Каталог</a>
+              <div class="form-props form-props-2">
+                <div class="form-props-row form-props-select">
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Марка">Марка</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Модель">Модель</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Кузов">Кузов</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Год выпуска">Год выпуска</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Модификация">Модификация</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="customize-form-footer">
+                <button class="button-default" type="submit">Подобрать</button>
+                <a href="javascript:void(0)" class="button-default button-menu">Каталог</a>
               </div>
             </form>
           </div>
@@ -278,17 +358,29 @@
     </div>
   </div>
 
-  <div class="section-features">
+  <div class="section section-features">
     <div class="container">
       <div class="row row-justify">
         <div class="col-feature">
           <div class="feature-item">
             <img src="images/features/1.svg" alt="" class="feature-icon">
             <div class="feature-body">
+              <div class="feature-name">Доставка</div>
+              <div class="feature-desc">
+                Бесплатно <br>
+                до пункта выдачи заказа
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-feature">
+          <div class="feature-item">
+            <img src="images/features/0.svg" alt="" class="feature-icon">
+            <div class="feature-body">
               <div class="feature-name">Шиномонтаж</div>
               <div class="feature-desc">
                 Бесплатно <br>
-                в точке выдачи заказа
+                в пункте выдачи заказа
               </div>
             </div>
           </div>
@@ -311,26 +403,413 @@
             <div class="feature-body">
               <div class="feature-name">Скидочная карта</div>
               <div class="feature-desc">
-                В подарок на все услуги <br>
-                сети «5 колесо»
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-feature">
-          <div class="feature-item">
-            <img src="images/features/4.svg" alt="" class="feature-icon">
-            <div class="feature-body">
-              <div class="feature-name">Рассрочка</div>
-              <div class="feature-desc">
-                Без предоплаты до 4-х <br>
-                месяцев или кредит
+                В подарок на все <br>
+                услуги сети «5 колесо»
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="section section-buy">
+    <div class="container">
+      <div class="row-buy">
+        <div class="section-head-flex">
+          <div class="section-heading">Купите шины</div>
+
+          <a href="javascript:void(0)" class="flex-link link-catalog">Каталог шин</a>
+        </div>
+
+        <div class="row row-buy-product no-gutters">
+          <div class="col-md-6">
+            <div class="buy-product-item">
+              <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/shini/1.jpg);"></a>
+              <div class="buy-product-body">
+                <div class="buy-product-head">
+                  <div class="buy-product-name">Летние шины <img src="images/product-icons/sun.svg" alt=""></div>
+                  <div class="buy-product-info">19 105 шин в каталоге</div>
+                </div>
+                <div class="buy-product-foot">
+                  <div class="buy-product-price">от <span>2 660</span> <i class="rub">₽</i></div>
+                  <div class="buy-product-goto">
+                    <div class="buy-product-deli">Доставка уже завтра</div>
+
+                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="buy-product-item">
+              <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/shini/2.jpg);"></a>
+              <div class="buy-product-body">
+                <div class="buy-product-head">
+                  <div class="buy-product-name">Зимние шины <img src="images/product-icons/snowflake.svg" alt=""> <img src="images/product-icons/sh.svg" alt=""></div>
+                  <div class="buy-product-info">17 983 шины в каталоге</div>
+                </div>
+                <div class="buy-product-foot">
+                  <div class="buy-product-price">от <span>2 660</span> <i class="rub">₽</i></div>
+                  <div class="buy-product-goto">
+                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-brands">
+          <div class="col-brands col-brands-slider">
+            <div class="brands-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/shini/brands/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shini/brands/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shini/brands/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shini/brands/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/shini/brands/2.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-brands col-flex-link">
+            <a href="javascript:void(0)" class="flex-link link-brands">Все бренды шин</a>
+          </div>
+        </div>
+      </div>
+      <div class="row-buy">
+        <div class="section-head-flex">
+          <div class="section-heading">Купите шины</div>
+
+          <a href="javascript:void(0)" class="flex-link link-catalog">Каталог дисков</a>
+        </div>
+
+        <div class="row row-buy-product no-gutters">
+          <div class="col-md-6">
+            <div class="buy-product-item">
+              <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/diski/1.jpg);"></a>
+              <div class="buy-product-body">
+                <div class="buy-product-head">
+                  <div class="buy-product-name">Литые диски</div>
+                  <div class="buy-product-info">9 801 диск в каталоге</div>
+                </div>
+                <div class="buy-product-foot">
+                  <div class="buy-product-price">от <span>1 860</span> <i class="rub">₽</i></div>
+                  <div class="buy-product-goto">
+                    <div class="buy-product-deli">Доставка уже завтра</div>
+
+                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="buy-product-item">
+              <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/diski/2.jpg);"></a>
+              <div class="buy-product-body">
+                <div class="buy-product-head">
+                  <div class="buy-product-name">Штампованные диски</div>
+                  <div class="buy-product-info">3 855 штампованных дисков в каталоге</div>
+                </div>
+                <div class="buy-product-foot">
+                  <div class="buy-product-price">от <span>660</span> <i class="rub">₽</i></div>
+                  <div class="buy-product-goto">
+                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-brands">
+          <div class="col-brands col-brands-slider">
+            <div class="brands-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/diski/brands/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/diski/brands/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/diski/brands/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/diski/brands/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/diski/brands/2.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-brands col-flex-link">
+            <a href="javascript:void(0)" class="flex-link link-brands">Все бренды дисков</a>
+          </div>
+        </div>
+
+        <script>
+          const brandSlider = new Swiper('.brands-slider', {
+            slidesPerView: 5,
+            loop: false,
+
+            on: {
+              init: function () {
+                this.el.style.opacity = 1
+              }
+            }
+          });
+        </script>
+      </div>
+
+      <div class="row-service">
+        <div class="section-heading">Полный сервис</div>
+
+        <div class="service-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide service-slide">
+              <img class="service-image" src="images/services/1.png" alt="Шиномонтаж">
+              <div class="service-name">Шиномонтаж</div>
+              <div class="service-desc">
+                Выгодный и качественный <br>
+                сезонный шиномонтаж <br>
+                в сети «5 колесо».
+              </div>
+
+              <div class="service-arrow"><img src="images/button-arrow-bw.svg" alt=""></div>
+            </div>
+            <div class="swiper-slide service-slide">
+              <img class="service-image" src="images/services/2.png" alt="Хранение шин">
+              <div class="service-name">Хранение шин</div>
+              <div class="service-desc">
+                Ваши шины занимают <br>
+                много полезного места? <br>
+                Доверьте их хранение нам.
+              </div>
+
+              <div class="service-arrow"><img src="images/button-arrow-bw.svg" alt=""></div>
+            </div>
+            <div class="swiper-slide service-slide">
+              <img class="service-image" src="images/services/3.png" alt="Правка дисков">
+              <div class="service-name">Правка дисков</div>
+              <div class="service-desc">
+                Ремонт дисков на <br>
+                специализированном <br>
+                оборудовании.
+              </div>
+
+              <div class="service-arrow"><img src="images/button-arrow-bw.svg" alt=""></div>
+            </div>
+            <div class="swiper-slide service-slide">
+              <img class="service-image" src="images/services/4.png" alt="Ремонт шин">
+              <div class="service-name">Ремонт шин</div>
+              <div class="service-desc">
+                Ремонт автомобильных <br>
+                шин любой сложности <br>
+                с гарантией.
+              </div>
+
+              <div class="service-arrow"><img src="images/button-arrow-bw.svg" alt=""></div>
+            </div>
+            <div class="swiper-slide service-slide">
+              <img class="service-image" src="images/services/5.png" alt="Онлайн-запись">
+              <div class="service-name">Онлайн-запись</div>
+              <div class="service-desc">
+                Быстро и просто <br>
+                забронируйте удобный день <br>
+                и время за собой.
+              </div>
+
+              <div class="service-arrow"><img src="images/button-arrow-bw.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const serviceSlider = new Swiper('.service-slider', {
+            slidesPerView: 5,
+            spaceBetween: 1,
+
+            on: {
+              init: function () {
+                this.el.style.opacity = 1
+              }
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="section stocks">
+    <div class="container">
+      <div class="section-head-flex">
+        <div class="section-heading">Акции</div>
+        <a href="javascript:void(0)" class="flex-link link-catalog">Все акции</a>
+      </div>
+
+      <div class="stock-slider-wrapper">
+        <div class="stock-nav">
+          <div class="stock-nav-item stock-prev">
+            <img src="images/stocks/prev.svg" alt="">
+          </div>
+          <div class="stock-nav-item stock-next">
+            <img src="images/stocks/next.svg" alt="">
+          </div>
+        </div>
+
+        <div class="stock-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/1.png);">
+                <div class="stock-slide-title">
+                  Бесплатная <br>доставка
+                </div>
+                <div class="stock-slide-desc"></div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">Бесплатная доставка</div>
+                  <div class="stock-slide-exp">Бессрочная акция</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/2.png);">
+                <div class="stock-slide-title">
+                  Шиномонтаж <br>
+                  в пункте выдачи <br>
+                  <span>бесплатно*</span>
+                </div>
+                <div class="stock-slide-desc">
+                  * при покупке комплекта шин <br>
+                  или дисков.
+                </div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Шиномонтаж в пункте <br>
+                    выдачи бесплатно
+                  </div>
+                  <div class="stock-slide-exp">Акция действует до 31.08.2020</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/3.png);">
+                <div class="stock-slide-title">
+                  Скидка <br>
+                  постоянного клиента <br>
+                  <span>в подарок</span> <br>
+                  к покупке
+                </div>
+                <div class="stock-slide-desc">
+                  От 5% до 15% на все услуги <br>
+                  сети шиномонтажей <br>
+                  «5 КОЛЕСО».
+                </div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Скидка постоянного <br>
+                    клиента в подарок <br>
+                    к покупке
+                  </div>
+                  <div class="stock-slide-exp">Бессрочная акция</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/4.png);">
+                <div class="stock-slide-title">
+                  <span>Правильное</span> <br>
+                  сезонное <br>
+                  хранение <br>
+                  Ваших колёс
+                </div>
+                <div class="stock-slide-desc"></div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Правильное сезонное <br>
+                    хранение Ваших колёс
+                  </div>
+                  <div class="stock-slide-exp">Акция действует до 31.08.2020</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <script>
+        const stockSlider = new Swiper('.stock-slider', {
+          slidesPerView: 2,
+          spaceBetween: 30,
+
+          on: {
+            init: function () {
+              this.el.style.opacity = 1
+            }
+          },
+
+          navigation: {
+            prevEl: '.stock-prev',
+            nextEl: '.stock-next'
+          }
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="section about">
+    <div class="container">
+      <div class="section-heading">Магазин шин и дисков в Казани</div>
+      <div class="row row-about">
+        <div class="col-about col-about-left">
+          <img src="images/about-5k.jpg" alt="">
+        </div>
+        <div class="col-about col-about-center">
+          <div class="about-content">
+            <p>
+              Есть над чем задуматься: непосредственные участники технического прогресса, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. А ещё стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Многие известные личности преданы социально-демократической анафеме.
+            </p>
+
+            <p>
+              С другой стороны, реализация намеченных плановых заданий напрямую зависит от как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, некоторые особенности внутренней политики превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+            </p>
+
+            <a href="javascript:void(0)" class="about-link">Читать далее</a>
+          </div>
+        </div>
+        <div class="col-about col-about-right">
+          <div class="about-points">
+            <div class="about-points-col points-head">
+              <div class="about-points-count">
+                <div class="about-points-count-total">
+                  33
+                </div>
+                <div class="about-points-title">Пункта<br>выдачи</div>
+              </div>
+            </div>
+            <div class="about-points-col points-foot">
+              <a href="javascript:void(0)" class="about-points-city">Казань</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
 
   <script src="js/main.js"></script>
