@@ -55,7 +55,7 @@
           <div class="header-info">
             <div class="header-info-icon"><img src="images/callback.svg" alt=""></div>
             <div class="header-info-body">
-              <a href="javascript:void(0)" class="header-info-link header-info-link-callback">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-callback" data-toggle="modal" data-target="#callModal">
                 <span class="header-info-link-name">Заказать звонок</span>
               </a>
               <div class="header-info-desc">Перезвоним Вам</div>
@@ -213,7 +213,7 @@
           <div class="slider-section-podbor">
             <form class="customize-form">
               <div class="customize-form-select">
-                <a href="javascript:void(0)" class="customize-form-item">
+                <a href="javascript:void(0)" class="customize-form-item active">
                   <span>Шины</span>
                 </a>
                 <a href="javascript:void(0)" class="customize-form-item">
@@ -221,15 +221,15 @@
                 </a>
               </div>
               <div class="customize-form-select customize-form-select-by">
-                <a href="javascript:void(0)" class="customize-form-item">
+                <a href="javascript:void(0)" class="customize-form-item active">
                   <span>По параметрам</span> <img class="customize-form-hint" src="images/hint.svg" data-toggle="tooltip" data-placement="bottom" title="Текст подсказки" alt="">
                 </a>
-                <a href="javascript:void(0)" class="customize-form-item active">
+                <a href="javascript:void(0)" class="customize-form-item">
                   <span>По автомобилю</span>
                 </a>
               </div>
 
-              <div class="form-props form-props-1" style="display: none;">
+              <div class="form-props form-props-1-1">
                 <div class="form-props-row form-props-select">
                   <div class="form-props-list" data-divider="/">
                     <div class="form-props-list-inner">
@@ -286,8 +286,126 @@
                   </label>
                 </div> 
               </div>
+              
+              <div class="form-props form-props-2-2" style="display: none;">
+                <div class="form-props-row form-props-select">
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Марка">Марка</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Jetta">Jetta</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Кузов">Кузов</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Год выпуска">Год выпуска</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Модификация">Модификация</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              <div class="form-props form-props-2">
+              <div class="form-props form-props-2-1" style="display: none;">
+                <div class="form-props-row form-props-select">
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Диаметр, “">Диаметр, “</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Крепеж, PCD">Крепеж, PCD</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-props-list">
+                    <div class="form-props-list-inner">
+                      <div class="form-props-current" data-placeholder="Вылет, ET">Вылет, ET</div>
+                    </div>
+                    <div class="form-props-drop">
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                      <div class="form-props-drop-select" data-value="Select value">Select value</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-props-row form-props-check">
+                  <label class="form-props-check-item">
+                    <input type="checkbox" class="form-props-check-type">
+                    <div class="form-props-check-name">Все</div>
+                  </label>
+                  <label class="form-props-check-item">
+                    <input type="checkbox" class="form-props-check-type">
+                    <div class="form-props-check-name">Кованый</div>
+                  </label>
+                  <label class="form-props-check-item">
+                    <input type="checkbox" class="form-props-check-type" checked>
+                    <div class="form-props-check-name">Литой</div>
+                  </label>
+                  <label class="form-props-check-item">
+                    <input type="checkbox" class="form-props-check-type">
+                    <div class="form-props-check-name">Штампованный</div>
+                  </label>
+                </div> 
+              </div>
+
+              <div class="form-props form-props-2-2" style="display: none;">
                 <div class="form-props-row form-props-select">
                   <div class="form-props-list">
                     <div class="form-props-list-inner">
@@ -436,7 +554,7 @@
                   <div class="buy-product-goto">
                     <div class="buy-product-deli">Доставка уже завтра</div>
 
-                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                    <a href="javascript:void(0)" class="button-default">Перейти</a>
                   </div>
                 </div>
               </div>
@@ -453,7 +571,7 @@
                 <div class="buy-product-foot">
                   <div class="buy-product-price">от <span>2 660</span> <i class="rub">₽</i></div>
                   <div class="buy-product-goto">
-                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                    <a href="javascript:void(0)" class="button-default">Перейти</a>
                   </div>
                 </div>
               </div>
@@ -499,7 +617,7 @@
                   <div class="buy-product-goto">
                     <div class="buy-product-deli">Доставка уже завтра</div>
 
-                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                    <a href="javascript:void(0)" class="button-default">Перейти</a>
                   </div>
                 </div>
               </div>
@@ -516,7 +634,7 @@
                 <div class="buy-product-foot">
                   <div class="buy-product-price">от <span>660</span> <i class="rub">₽</i></div>
                   <div class="buy-product-goto">
-                    <a href="javascript:void(0)" class="button-default button-red">Перейти</a>
+                    <a href="javascript:void(0)" class="button-default">Перейти</a>
                   </div>
                 </div>
               </div>
@@ -829,7 +947,7 @@
               <img src="images/phone-callback.svg" alt="" class="contact-icon-src">
             </div>
             <div class="contact-body">
-              <a href="javascript:void(0)" class="contact-title">Заказать звонок</a>
+              <a href="javascript:void(0)" class="contact-title" data-toggle="modal" data-target="#callModal">Заказать звонок</a>
               <div class="contact-desc">Мы перезвоним Вам</div>
             </div>
           </div>
@@ -921,6 +1039,37 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-custom">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-head">
+          <div class="modal-heading">Заказать звонок</div>
+          <div class="modal-hide" data-dismiss="modal">
+            <img src="images/modal-hide.svg" alt="Закрыть">
+          </div>
+        </div>
+
+        <form class="modal-form">
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="Анатолий" required>
+          </div>
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <button class="modal-form-submit button-default button-light button-red-hover button-clear" type="submit">Заказать звонок</button>
+          <label class="modal-form-agree">
+            <input type="checkbox" class="modal-form-check">
+            <span class="modal-form-agree-text">
+              Я согласен(-а) с <a href="javascript:void(0)">условиями</a> политики <br>
+              конфиденциальности.
+            </span>
+          </label>
+        </form>
+
       </div>
     </div>
   </div>
