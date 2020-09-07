@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  
+  <title>5koleso</title>
+
+  <!-- other styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=fallback" rel="stylesheet">
+  <link rel="stylesheet" href="js/ion/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- common styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ion/ion.rangeSlider.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <a href="/" class="header-logo">
+            <img src="images/logo.svg" alt="5koleso">
+          </a>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/pin.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                <span class="header-info-link-name">Казань</span>
+              </a>
+              <div class="header-info-desc">33 пункта выдачи</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/phone.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="tel:88006001122" class="header-info-link header-info-link-tel">
+                <span class="header-info-link-name">8 800 600 11-22</span>
+              </a>
+              <div class="header-info-desc">Горячая линия</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/callback.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-callback" data-toggle="modal" data-target="#callModal">
+                <span class="header-info-link-name">Заказать звонок</span>
+              </a>
+              <div class="header-info-desc">Перезвоним Вам</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+            <span class="header-cart-title">Корзина</span>
+            <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <div class="header-main-inner">
+        <div class="header-nav">
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/1.svg" alt=""><span>Шины</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/2.svg" alt=""><span>Диски</span>
+            </a>
+          </div>
+          <!-- <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/3.svg" alt=""><span>Шиномонтаж</span>
+            </a>
+          </div> -->
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/4.svg" alt=""><span>Акции</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/5.svg" alt=""><span>Отзывы</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/6.svg" alt=""><span>Контакты</span>
+            </a>
+          </div>
+          <div class="header-nav-item header-nav-drop">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/7.svg" alt=""><span>Покупателям</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="header-search">
+          <input type="text" class="header-search-input" placeholder="Поиск">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="container">
+      <div class="breadcrumbz">
+        <a href="/" class="breadcrumbz-item">Главная</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Каталог</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
+      </div>
+
+      <div class="section-head">
+        <div class="section-heading">Шины в Казани</div>
+
+        <div class="section-select">
+          <a href="javascript:void(0)" class="section-select-props link-light">По параметрам <img src="images/hint.svg" alt=""></a>
+          <a href="javascript:void(0)" class="section-select-auto button-default button-border button-clear">По авто</a>
+        </div>
+      </div>
+
+      <div class="catalog-wrap row">
+        <div class="catalog-col catalog-side">
+          <div class="catalog-filter">
+            <div class="filter-title">Найдено 9 855 шин</div>
+
+            <div class="filter-sort">
+              <div class="filter-sort-title">Сортировка</div>
+
+              <select class="filter-select" name="sortBy" id="sortBy">
+                <option value="0" selected>По популярности</option>
+                <option value="1">По возрастанию цены</option>
+                <option value="2">По убыванию цены</option>
+              </select>
+            </div>
+
+            <div class="filter-item">
+              <div class="filter-title">Параметры</div>
+
+              <div class="filter-props">
+                <div class="filter-props-row">
+                  <div class="filter-props-item">
+                    <span>Ширина</span>
+                  </div>
+                  <div class="filter-props-item">
+                    <select name="" id="" class="filter-select">
+                      <option value="0">Все</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter-props-row">
+                  <div class="filter-props-item">
+                    <span>Высота</span>
+                  </div>
+                  <div class="filter-props-item">
+                    <select name="" id="" class="filter-select">
+                      <option value="0">Все</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter-props-row">
+                  <div class="filter-props-item">
+                    <span>Диаметр</span>
+                  </div>
+                  <div class="filter-props-item">
+                    <select name="" id="" class="filter-select">
+                      <option value="0">Все</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-helper">
+                <a href="javascript:void(0)" class="section-select-props link-light">О параметрах <img src="images/hint.svg" alt=""></a>
+                <a href="javascript:void(0)" class="section-select-auto button-default button-blue button-clear">Подбор по авто</a>
+              </div>
+            </div>
+
+            <div class="filter-item active">
+              <div class="filter-head">
+                <div class="filter-title">Сезонность</div>
+              </div>
+              <div class="filter-body">
+                <div class="filter-check-list">
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Зимние</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Летние</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Всесезонные</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-item active">
+              <div class="filter-head">
+                <div class="filter-title">Цена</div>
+              </div>
+              <div class="filter-body">
+                <input type="text" class="js-range-slider" name="price_range" value=""
+                  data-hide-from-to="true"
+                  data-hide-min-max="true"
+                  data-skin="round"
+                  data-type="double"
+                  data-min="1490"
+                  data-max="21490"
+                  data-from="1490"
+                  data-to="21490"
+                  data-grid="false"
+                >
+
+                <div class="filter-price">
+                  <div class="filter-price-item">
+                    <input class="filter-price-value filter-input price-min" value="">
+                  </div>
+                  <div class="filter-price-item">
+                    <input class="filter-price-value filter-input price-max" value="">
+                  </div>
+                </div>
+              </div>
+              <script>
+                $(function () {
+                    function updateData(getData) {
+                        $(".price-min").val(getData.from);
+                        $(".price-min").attr('value', getData.from);
+                        $(".price-max").val(getData.to);
+                        $(".price-max").attr('value', getData.to);
+                    }
+
+                    $(".js-range-slider").ionRangeSlider({
+                        onStart: function (data) {
+                            updateData(data);
+                        },
+
+                        onChange: function (data) {
+                            updateData(data);
+                        }
+                    });
+                });
+
+                $(document).on('input', '.price-max', function () {
+                    $(".js-range-slider").data("ionRangeSlider").update({
+                        to: $(this).val()
+                    })
+                });
+
+                $(document).on('input', '.price-min', function () {
+                    $(".js-range-slider").data("ionRangeSlider").update({
+                        from: $(this).val()
+                    })
+                });
+
+            </script>
+            </div>
+
+            <div class="filter-item active">
+              <div class="filter-head">
+                <div class="filter-title">Производитель</div>
+              </div>
+              <div class="filter-body">
+                <div class="filter-check-list">
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Nokian</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Pirelli</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Hankook</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Mechelin</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Cordiant</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Continental</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Bridgestone</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Viatti</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Goodyear</span>
+                    </label>
+                  </div>
+                  <div class="filter-check-item">
+                    <label class="filter-check-label">
+                      <input type="checkbox" class="filter-check-input">
+                      <span>Dunlop</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-item">
+              <div class="filter-head">Runflat</div>
+            </div>
+
+            <div class="filter-item">
+              <div class="filter-head">Off-road</div>
+            </div>
+
+            <div class="filter-item">
+              <div class="filter-head">Индекс скорости</div>
+            </div>
+
+            <div class="filter-item">
+              <div class="filter-head">Индекс нагрузки</div>
+            </div>
+
+            <div class="filter-helper filter-show">
+              <a href="javascript:void(0)" class="section-select-auto button-default button-blue button-clear">Подобрать</a>
+              <a href="javascript:void(0)" class="section-select-props link-light">Сбросить</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-col catalog-content">
+          <div class="catalog-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide catalog-slider-slide slide-1" style="background-image: url(images/razdel/slider/1.png);">
+                <div class="catalog-slider-title">Бесплатная доставка</div>
+                <div class="catalog-slider-desc">До ближайшего к Вам пункта выдачи-шиномонтажа "5 КОЛЕСО".</div>
+              </div>
+              <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/2.png);">
+                <div class="catalog-slider-title">
+                  Шиномонтаж в пункте выдачи <br>
+                  <span>бесплатно*</span>
+                </div>
+                <div class="catalog-slider-desc">
+                  * при покупке комплекта шин или дисков.
+                </div>
+              </div>
+              <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/3.png);">
+                <div class="catalog-slider-title">
+                  Скидка постоянного клиента<br>
+                  <span>в подарок</span> к покупке
+                </div>
+                <div class="catalog-slider-desc">От 5% до 15% на все услуги сети шиномонтажей «5 КОЛЕСО».</div>
+              </div>
+              <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/4.png);">
+                <div class="catalog-slider-title">
+                  <span>Правильное</span> <br>
+                  сезонное хранение Ваших колёс
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-slider-dots"></div>
+          </div>
+          <script>
+            const catalogSlider = new Swiper('.catalog-slider', {
+              slidesPerView: 1,
+
+              on: {
+                init: function () {
+                  this.el.style.opacity = 1
+                }
+              },
+
+              pagination: {
+                el: '.catalog-slider-dots',
+                clickable: true
+              },
+
+              autoplay: {
+                delay: 3000
+              }
+            })
+          </script>
+
+          <div class="product-list row">
+            <div class="col-md-3">
+              <div class="product-item">
+                <a href="" class="product-photo" style="background-image: url(images/razdel/products/1.jpg);"></a>
+                <a href="" class="product-name"></a>
+                <div class="product-price">
+                  <div class="product-price-old product-price-new"></div>
+                </div>
+                <div class="product-hover">
+                  <div class="product-rate">
+                    <div class="product-rate-inner">
+                      <div class="product-rate-item active"></div>
+                      <div class="product-rate-item active"></div>
+                      <div class="product-rate-item active"></div>
+                      <div class="product-rate-item active"></div>
+                      <div class="product-rate-item"></div>
+                    </div>
+                    <span>151 отзыв</span>
+                  </div>
+                  <a href="" class="product-tocart"><img src="images/cart-light.svg" alt="В корзину">В корзину</a>
+                  <div class="product-deli"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about" style="display:none">
+    <div class="container">
+      <div class="section-heading">Шины в каталоге интернет-магазина 5 КОЛЕСО</div>
+      <div class="row row-about">
+        <div class="col-about col-about-left">
+          <img src="images/about-5k.jpg" alt="">
+        </div>
+        <div class="col-about col-about-center">
+          <div class="about-content">
+            <p>
+              Есть над чем задуматься: непосредственные участники технического прогресса, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. А ещё стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Многие известные личности преданы социально-демократической анафеме.
+            </p>
+
+            <p>
+              С другой стороны, реализация намеченных плановых заданий напрямую зависит от как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, некоторые особенности внутренней политики превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+            </p>
+
+            <a href="javascript:void(0)" class="about-link">Читать далее</a>
+          </div>
+        </div>
+        <div class="col-about col-about-right">
+          <div class="about-points">
+            <div class="about-points-col points-head">
+              <div class="about-points-count">
+                <div class="about-points-count-total" data-count="33">
+                  <img src="images/point-shape.svg" alt="33 пункта выдачи">
+                </div>
+                <div class="about-points-title">Пункта<br>выдачи</div>
+              </div>
+            </div>
+            <div class="about-points-col points-foot">
+              <a href="javascript:void(0)" class="about-points-city link-light">Казань</a>
+              <a href="javascript:void(0)" class="button-default button-border button-clear">Карта</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section contact" style="display:none">
+    <div class="container">
+      <div class="row row-contact no-gutters">
+        <div class="col-contact">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="images/phone-call.svg" alt="" class="contact-icon-src">
+            </div>
+            <div class="contact-body">
+              <a href="tel:88006001122" class="contact-title">8 800 600 11-22</a>
+              <div class="contact-desc">Горячая линия 24/7</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="images/phone-callback.svg" alt="" class="contact-icon-src">
+            </div>
+            <div class="contact-body">
+              <a href="javascript:void(0)" class="contact-title" data-toggle="modal" data-target="#callModal">Заказать звонок</a>
+              <div class="contact-desc">Мы перезвоним Вам</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-subscribe">
+          <form class="contact-form">
+            <div class="contact-title">Акции и скидки</div>
+            <div class="contact-form-desc">Доставим выгодные предложения на Вашу почту!</div>
+            <div class="contact-row">
+              <input type="text" class="contact-form-input" placeholder="Ваш e-mail">
+              <button class="contact-form-button button-default button-border button-clear">Подписаться</button>
+            </div>
+            <div class="contact-form-agree">
+              Нажимая на кнопку "Подписаться" Вы соглашаетесь с <a class="contact-link" href="javascript:void(0)">условиями</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="display:none">
+    <div class="container">
+      <div class="row row-links">
+        <div class="col-md-2">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Шины</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Диски</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Бренды</a></div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Услуги</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Акции</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Отзывы</a></div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Доставка</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оплата</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Гарантия</a></div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">О магазине</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Онлайн-запись</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Контакты</a></div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Политика конфиденциальности</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оферта</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-footer">
+        <div class="col-md-6">
+          <div class="footer-info">
+            <p>Интернет-магазин шин и дисков в Казани 5колесо.</p>
+            <p>Федеральная сеть «5 колесо» 2010 - 2020.</p>
+            <p>Все права защищены.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-col">
+            <div class="footer-foollow">
+              <div class="footer-follow-title">Следите за нами в соцсетях!</div>
+              <div class="footer-follow-list">
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/vk.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/yt.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/fb.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/ig.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/ok.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/tg.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/tw.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/wa.svg" alt=""></a>
+              </div>
+            </div>
+  
+            <div class="footer-payments">
+              <img src="images/payments/visa.svg" alt="visa" class="footer-payments-item">
+              <img src="images/payments/maestro.svg" alt="maestro" class="footer-payments-item">
+              <img src="images/payments/mastercard.svg" alt="mastercard" class="footer-payments-item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-custom">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-head">
+          <div class="modal-heading">Заказать звонок</div>
+          <div class="modal-hide" data-dismiss="modal">
+            <img src="images/modal-hide.svg" alt="Закрыть">
+          </div>
+        </div>
+
+        <form class="modal-form">
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="Анатолий" required>
+          </div>
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <button class="modal-form-submit button-default button-light button-red-hover button-clear" type="submit">Заказать звонок</button>
+          <label class="modal-form-agree">
+            <input type="checkbox" class="modal-form-check">
+            <span class="modal-form-agree-text">
+              Я согласен(-а) с <a href="javascript:void(0)">условиями</a> политики <br>
+              конфиденциальности.
+            </span>
+          </label>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
