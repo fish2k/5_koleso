@@ -6,11 +6,31 @@ $(document).ready(function() {
           headerOffset    = headerMain.offset().top
           body            = $('body'),
           burger          = $('.header-burger')
+          search          = $('.responsive-search'),
+          filter          = $('.responsive-filter'),
+          overlay         = $('.overlay')
 
     $('[data-toggle="tooltip"]').tooltip()
 
     burger.click(function () {
+        body.removeClass("state-search state-filter")
         body.toggleClass('state-nav')
+    })
+
+    search.click(function () {
+        body.removeClass("state-filter state-nav")
+        body.toggleClass('state-search')
+
+        $('.search-responsive-input').focus()
+    })
+
+    filter.on('click', function () {
+        body.removeClass("state-search state-nav")
+        body.toggleClass('state-filter')
+    })
+
+    overlay.on("click", function () {
+        body.removeClass("state-nav state-search state-filter")
     })
 
     // fixed header
