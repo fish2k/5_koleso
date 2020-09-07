@@ -1,9 +1,38 @@
 $(document).ready(function() {
     const transitionSpeed = 200,
-          dropListElem = '.form-props-drop',
-          formPropsList = $('.form-props-list');
+          dropListElem    = '.form-props-drop',
+          formPropsList   = $('.form-props-list'),
+          headerMain      = $('.header-main'),
+          headerOffset    = headerMain.offset().top
+          body            = $('body'),
+          burger          = $('.header-burger')
 
     $('[data-toggle="tooltip"]').tooltip()
+
+    burger.click(function () {
+        body.toggleClass('state-nav')
+    })
+
+    // fixed header
+    if ( $(window).innerWidth() > 991 ) {
+        $(window).scroll(function () {
+            var st = $(this).scrollTop()
+    
+            if (st >= headerOffset) {
+                $('.header-fixed-placeholder').css({
+                    height: headerMain.innerHeight() + 'px',
+                    marginBottom: 30
+                })
+                headerMain.addClass('header-fixed')
+            } else {
+                $('.header-fixed-placeholder').css({
+                    height: 0,
+                    marginBottom: 0
+                })
+                headerMain.removeClass('header-fixed')
+            }
+        })
+    }
     
     // кастомная реализация select -> option
     formPropsList.click(function () {

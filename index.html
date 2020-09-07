@@ -71,9 +71,21 @@
       </div>
     </div>
   </div>
+  <div class="header-fixed-placeholder"></div>
   <div class="header-main">
     <div class="container">
       <div class="header-main-inner">
+        <a href="/" class="fixed-logo"><img src="images/logo-min.svg" alt=""></a>
+
+        <div class="fixed-contacts">
+          <div class="fixed-contacts-item">
+            <a href="javascript:void(0)" class="fixed-contacts-link link-city"> <span>Казань</span></a>
+          </div>
+          <div class="fixed-contacts-item">
+            <a href="tel:88006001122" class="fixed-contacts-link link-tel"> <span>8 800 600 11-22</span></a>
+          </div>
+        </div>
+
         <div class="header-nav">
           <div class="header-nav-item">
             <a href="javascript:void(0)" class="header-nav-link">
@@ -85,36 +97,58 @@
               <img src="images/nav-icons/2.svg" alt=""><span>Диски</span>
             </a>
           </div>
-          <!-- <div class="header-nav-item">
-            <a href="javascript:void(0)" class="header-nav-link">
-              <img src="images/nav-icons/3.svg" alt=""><span>Шиномонтаж</span>
-            </a>
-          </div> -->
           <div class="header-nav-item">
             <a href="javascript:void(0)" class="header-nav-link">
-              <img src="images/nav-icons/4.svg" alt=""><span>Акции</span>
+              <img src="images/nav-icons/4.svg" alt=""><span class="fixed-hide">Акции</span>
             </a>
           </div>
           <div class="header-nav-item">
             <a href="javascript:void(0)" class="header-nav-link">
-              <img src="images/nav-icons/5.svg" alt=""><span>Отзывы</span>
+              <img src="images/nav-icons/5.svg" alt=""><span class="fixed-hide">Отзывы</span>
             </a>
           </div>
           <div class="header-nav-item">
             <a href="javascript:void(0)" class="header-nav-link">
-              <img src="images/nav-icons/6.svg" alt=""><span>Контакты</span>
+              <img src="images/nav-icons/6.svg" alt=""><span class="fixed-hide">Контакты</span>
             </a>
           </div>
           <div class="header-nav-item header-nav-drop">
             <a href="javascript:void(0)" class="header-nav-link">
-              <img src="images/nav-icons/7.svg" alt=""><span>Покупателям</span>
+              <img src="images/nav-icons/7.svg" alt=""><span class="fixed-hide">Покупателям</span>
             </a>
           </div>
         </div>
 
-        <form class="header-search">
-          <input type="text" class="header-search-input" placeholder="Поиск">
-        </form>
+        <div class="header-group">
+          <form class="header-search">
+            <input type="text" class="header-search-input" placeholder="Поиск">
+          </form>
+  
+          <div class="fixed-cart">
+            <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+              <span class="header-cart-title">Корзина</span>
+              <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main-inner header-main-responsive">
+        <a href="/" class="header-responsive-logo">
+          <img src="images/logo-min.svg" alt="">
+        </a>
+
+        <div class="header-responsive-buttons">
+          <a href="javascript:void(0)" class="responsive-action responsive-search"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-cart"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-nav">
+            <div class="header-burger">
+              <div class="burger-line line-1"></div>
+              <div class="burger-line line-2"></div>
+              <div class="burger-line line-3"></div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -668,6 +702,25 @@
               init: function () {
                 this.el.style.opacity = 1
               }
+            },
+
+            breakpoints: {
+              320: {
+                slidesPerView: 2
+              },
+              768: {
+                slidesPerView: 3
+              },
+              991: {
+                slidesPerView: 4
+              },
+              1200: {
+                slidesPerView: 5
+              }
+            },
+
+            autoplay: {
+              delay: 3000
             }
           });
         </script>
@@ -744,6 +797,25 @@
             on: {
               init: function () {
                 this.el.style.opacity = 1
+              }
+            },
+
+            autoplay: {
+              delay: 3000
+            },
+
+            breakpoints: {
+              0: {
+                slidesPerView: 1
+              },
+              768: {
+                slidesPerView: 2
+              },
+              991: {
+                slidesPerView: 3
+              },
+              1200: {
+                slidesPerView: 5
               }
             }
           });
@@ -873,6 +945,7 @@
         const stockSlider = new Swiper('.stock-slider', {
           slidesPerView: 2,
           spaceBetween: 30,
+          autoHeight: true,
 
           on: {
             init: function () {
@@ -883,6 +956,19 @@
           navigation: {
             prevEl: '.stock-prev',
             nextEl: '.stock-next'
+          },
+
+          breakpoints: {
+            0: {
+              slidesPerView: 1
+            },
+            1200: {
+              slidesPerView: 2
+            }
+          },
+
+          autoplay: {
+            delay: 3000
           }
         });
       </script>
@@ -972,35 +1058,35 @@
   <div class="footer">
     <div class="container">
       <div class="row row-links">
-        <div class="col-md-2">
+        <div class="col-md-2 col-6">
           <div class="footer-list">
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Шины</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Диски</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Бренды</a></div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-6">
           <div class="footer-list">
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Услуги</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Акции</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Отзывы</a></div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-6">
           <div class="footer-list">
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Доставка</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оплата</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Гарантия</a></div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-6">
           <div class="footer-list">
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">О магазине</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Онлайн-запись</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Контакты</a></div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer-list">
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Политика конфиденциальности</a></div>
             <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оферта</a></div>
@@ -1073,6 +1159,8 @@
       </div>
     </div>
   </div>
+
+  <div class="overlay"></div>
 
   <script src="js/main.js"></script>
 </body>
