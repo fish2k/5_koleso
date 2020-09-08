@@ -169,19 +169,124 @@
         <a href="/" class="breadcrumbz-item">Главная</a>
         <a href="javascript:void(0)" class="breadcrumbz-item">Каталог</a>
         <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
-        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
-        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Nokian</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Nordman 7</a>
       </div>
 
       <div class="section-head">
-        <div class="section-heading">Шина Nokian Nordman 7 175/65 R15 T 88 в Казани</div>
+        <div class="section-head-group">
+          <div class="section-heading">Шина Nokian Nordman 7 175/65 R15 T 88 в Казани</div>
+          <span class="detail-icons">
+            <img src="images/product-icons/snowflake.svg" alt="icon-image" class="detail-icon">
+            <img src="images/product-icons/sh.svg" alt="icon-image" class="detail-icon">
+          </span>
+        </div>
 
         <div class="detail-brands">
           <img src="images/detail/brands/brand.jpg" alt="">
         </div>
       </div>
 
-      <div class="detail-wrap"></div>
+      <div class="detail-wrap">
+        <div class="row row-detail">
+          <div class="col-md-6">
+            <div class="detail-sliders">
+              <div class="detail-slider-thumbs swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(images/detail/slide-1.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(images/detail/slide-2-thumb.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(images/detail/slide-3-thumb.jpg);"></div>
+                  
+                </div>
+              </div>
+              <div class="detail-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide detail-slider-item" style="background-image: url(images/detail/slide-1.jpg);"></div>
+                  <div class="swiper-slide detail-slider-item" style="background-image: url(images/detail/slide-1.jpg);"></div>
+                  <div class="swiper-slide detail-slider-item" style="background-image: url(images/detail/slide-3.jpg);"></div>
+                </div>
+              </div>
+
+              <script>
+                var detailThumbsSlider = new Swiper(".detail-slider-thumbs", {
+                  slidesPerView: 4,
+                  spaceBetween: 15,
+                  freeMode: true,
+
+                  on: {
+                    init: function () {
+                      this.el.style.opacity = 1;
+                    }
+                  },
+
+                  breakpoints: {
+                    0: {
+                      direction: "horizontal"
+                    },
+                    481: {
+                      direction: "vertical"
+                    }
+                  }
+                });
+
+                var detailSlider = new Swiper(".detail-slider", {
+                  slidesPerView: 1,
+                  //loop: true,
+                  height: "auto",
+
+                  on: {
+                    init: function () {
+                      this.el.style.opacity = 1;
+                    }
+                  },
+
+                  navigation: {
+                    prevEl: ".detail-prev",
+                    nextEl: ".detail-next"
+                  },
+
+                  thumbs: {
+                    swiper: detailThumbsSlider
+                  }
+
+                });
+              </script>
+            </div>
+          </div>
+          <div class="col-md-6">
+
+            <div class="detail-list" style="margin-top: 164px">
+              <div class="detail-list-item header-info">
+                <div class="header-info-icon"><img src="images/detail/detail-pin.svg" alt="detail-icon"></div>
+                <div class="header-info-body">
+                  <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                    <span class="header-info-link-name">Казань</span>
+                  </a>
+                  <div class="header-info-desc">33 пункта выдачи</div>
+                </div>
+              </div>
+              <div class="detail-list-item header-info">
+                <div class="header-info-icon"><img src="images/detail/detail-check.svg" alt="detail-icon"></div>
+                <div class="header-info-body">
+                  <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                    <span class="header-info-link-name">В наличии</span>
+                  </a>
+                  <div class="header-info-desc">Под заказ 8+ шт</div>
+                </div>
+              </div>
+              <div class="detail-list-item header-info">
+                <div class="header-info-icon"><img src="images/detail/detail-deli.svg" alt="detail-icon"></div>
+                <div class="header-info-body">
+                  <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                    <span class="header-info-link-name">Доставка</span>
+                  </a>
+                  <div class="header-info-desc">Завтра, бесплатно</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -217,8 +322,6 @@
   </div>
 
   <div class="overlay"></div>
-
-  <div class="responsive-filter">Фильтр</div>
 
   <script src="js/main.js"></script>
 </body>

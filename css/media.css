@@ -301,6 +301,10 @@
 }
 
 @media (max-width: 991px) {
+  .responsive-filter {
+    display: block;
+  }
+
   .catalog-pagination {
     margin-left: -30px;
   }
@@ -474,7 +478,7 @@
   }
 
   .catalog-pagination {
-    margin-left: 0;
+    margin-left: 0; 
   }
 
   .catalog-controls {
