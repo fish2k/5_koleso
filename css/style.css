@@ -1682,6 +1682,10 @@ i.rub {
   right: 29px;
 }
 
+.filter-reset::before {
+  right: 0;
+}
+
 .section-select-props img {
   margin-left: 5px;
   filter: grayscale(100%);
