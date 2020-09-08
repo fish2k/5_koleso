@@ -7,7 +7,7 @@ $(document).ready(function() {
           body            = $('body'),
           burger          = $('.header-burger')
           search          = $('.responsive-search'),
-          filter          = $('.responsive-filter'),
+          filter          = $('.responsive-filter, .catalog-filter-close'),
           overlay         = $('.overlay')
 
     $('[data-toggle="tooltip"]').tooltip()

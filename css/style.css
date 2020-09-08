@@ -1505,7 +1505,8 @@ i.rub {
   position: relative;
   appearance: none;
   -webkit-appearance: none;
-  width: 20px;
+  flex: 0 0 20px;
+  max-width: 20px;
   height: 20px;
   border: 1px solid #d4d4d4;
 
@@ -2389,6 +2390,7 @@ i.rub {
 .responsive-cart {
   background-image: url(../images/cart-light.svg);
   background-size: 32px;
+  background-position: center 55%;
 }
 
 .responsive-nav {
@@ -2488,4 +2490,41 @@ i.rub {
 
 .search-responsive-input::placeholder {
   color: #fff;
+}
+
+.responsive-filter {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+
+  z-index: 5;
+}
+
+.catalog-filter-close {
+  font-size: 32px;
+  line-height: 30px;
+  width: 32px;
+  height: 32px;
+
+  text-align: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  color: var(--accent);
+
+  display: none;
+}
+
+.page-detail > .container {
+  background-image: none;
 }

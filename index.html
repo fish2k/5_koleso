@@ -953,7 +953,6 @@
         const stockSlider = new Swiper('.stock-slider', {
           slidesPerView: 2,
           spaceBetween: 30,
-          autoHeight: true,
 
           on: {
             init: function () {
@@ -968,7 +967,8 @@
 
           breakpoints: {
             0: {
-              slidesPerView: 1
+              slidesPerView: 1,
+              autoHeight: true
             },
             1200: {
               slidesPerView: 2

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  
+  <title>5koleso</title>
+
+  <!-- other styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=fallback" rel="stylesheet">
+  <link rel="stylesheet" href="js/ion/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- common styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ion/ion.rangeSlider.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <a href="/" class="header-logo">
+            <img src="images/logo.svg" alt="5koleso">
+          </a>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/pin.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                <span class="header-info-link-name">Казань</span>
+              </a>
+              <div class="header-info-desc">33 пункта выдачи</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/phone.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="tel:88006001122" class="header-info-link header-info-link-tel">
+                <span class="header-info-link-name">8 800 600 11-22</span>
+              </a>
+              <div class="header-info-desc">Горячая линия</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/callback.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-callback" data-toggle="modal" data-target="#callModal">
+                <span class="header-info-link-name">Заказать звонок</span>
+              </a>
+              <div class="header-info-desc">Перезвоним Вам</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+            <span class="header-cart-title">Корзина</span>
+            <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-fixed-placeholder"></div>
+  
+  <div class="header-main">
+    <div class="container">
+      <div class="header-main-inner">
+        <a href="/" class="fixed-logo"><img src="images/logo-min.svg" alt=""></a>
+
+        <div class="fixed-contacts">
+          <div class="fixed-contacts-item">
+            <a href="javascript:void(0)" class="fixed-contacts-link link-city"> <span>Казань</span></a>
+          </div>
+          <div class="fixed-contacts-item">
+            <a href="tel:88006001122" class="fixed-contacts-link link-tel"> <span>8 800 600 11-22</span></a>
+          </div>
+        </div>
+
+        <div class="header-nav">
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/1.svg" alt=""><span>Шины</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/2.svg" alt=""><span>Диски</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/4.svg" alt=""><span class="fixed-hide">Акции</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/5.svg" alt=""><span class="fixed-hide">Отзывы</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/6.svg" alt=""><span class="fixed-hide">Контакты</span>
+            </a>
+          </div>
+          <div class="header-nav-item header-nav-drop">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/7.svg" alt=""><span class="fixed-hide">Покупателям</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header-group">
+          <form class="header-search">
+            <input type="text" class="header-search-input" placeholder="Поиск">
+          </form>
+  
+          <div class="fixed-cart">
+            <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+              <span class="header-cart-title">Корзина</span>
+              <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main-inner header-main-responsive">
+        <a href="/" class="header-responsive-logo">
+          <img src="images/logo-min.svg" alt="">
+        </a>
+
+        <div class="header-responsive-buttons">
+          <a href="javascript:void(0)" class="responsive-action responsive-search"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-cart"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-nav">
+            <div class="header-burger">
+              <div class="burger-line line-1"></div>
+              <div class="burger-line line-2"></div>
+              <div class="burger-line line-3"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-responsive">
+    <form class="search-responsive-form">
+      <input type="text" class="search-responsive-input" placeholder="Начните вводить...">
+    </form>
+  </div>
+
+  <div class="page-wrap page-detail">
+    <div class="container">
+      <div class="breadcrumbz">
+        <a href="/" class="breadcrumbz-item">Главная</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Каталог</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Шины</a>
+      </div>
+
+      <div class="section-head">
+        <div class="section-heading">Шина Nokian Nordman 7 175/65 R15 T 88 в Казани</div>
+
+        <div class="detail-brands">
+          <img src="images/detail/brands/brand.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="detail-wrap"></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-custom">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-head">
+          <div class="modal-heading">Заказать звонок</div>
+          <div class="modal-hide" data-dismiss="modal">
+            <img src="images/modal-hide.svg" alt="Закрыть">
+          </div>
+        </div>
+
+        <form class="modal-form">
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="Анатолий" required>
+          </div>
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <button class="modal-form-submit button-default button-light button-red-hover button-clear" type="submit">Заказать звонок</button>
+          <label class="modal-form-agree">
+            <input type="checkbox" class="modal-form-check">
+            <span class="modal-form-agree-text">
+              Я согласен(-а) с <a href="javascript:void(0)">условиями</a> политики <br>
+              конфиденциальности.
+            </span>
+          </label>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="responsive-filter">Фильтр</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
