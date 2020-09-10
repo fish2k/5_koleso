@@ -1040,13 +1040,13 @@ i.rub {
   display: flex;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(0,0,0, 0);
-
+  /* box-shadow: 0 0 0 0 rgba(0,0,0, 0); */
+  box-shadow: 5px 5px 25px 0 rgba(0,0,0, .1);
   transition: all .13s ease;
 }
 
 .stock-nav-item:hover {
-  box-shadow: 0 0 25px 0 rgba(0,0,0, .1);
+  
 }
 
 .stock-prev {
@@ -1574,6 +1574,7 @@ i.rub {
   padding-top: 28px;
   padding-bottom: 18px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbz-item {
@@ -2662,6 +2663,16 @@ i.rub {
 
 .detail-side-actions {
   padding-left: 23px;
+  margin-top: 108px;
+}
+
+.detail-list {
+  margin-top: 164px;
+}
+
+.section-head-detail {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-rate-link {
@@ -2705,7 +2716,21 @@ i.rub {
 
 .detail-price-old {
   font-size: 24px;
+  position: relative;
   margin-left: 25px;
+}
+
+.detail-price-old::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 27%;
+
+  height: 2px;
+
+  background-color: var(--red-light);
+  transform: rotate(9deg)
 }
 
 .detail-price-help {
@@ -2814,6 +2839,11 @@ i.rub {
   background-color: #f3f4f4 !important;
 }
 
+.detail-nav-link:hover .tab-reviews-count,
+.detail-nav-link.active .tab-reviews-count {
+  background-color: var(--red-light);
+}
+
 .detail-nav-link.active::before {
   position: absolute;
   content: '';
@@ -2862,8 +2892,9 @@ i.rub {
 
 .detail-spec-item::before {
   position: absolute;
-  content: '.................................................................................................................................................................';
+  content: '.............................................................................................................................................................................................';
   bottom: 6px;
+  text-align: center;
   left: 0;
   right: 0;
   font-size: 12px;
@@ -3100,3 +3131,266 @@ i.rub {
   display: flex;
   align-items: center;
 }
+
+.review-item-user {
+  flex: 0 0 110px;
+  max-width: 110px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.review-item-body {
+  flex: 0 0 calc(100% - 110px);
+  max-width: calc(100% - 110px);
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.review-user-letter {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 70%;
+  text-align: center;
+  color: #fff;
+  
+  position: relative;
+
+  text-shadow: 0 0 30px rgba(0,0,0, .3);
+}
+
+.review-list {
+  margin-top: 88px;
+}
+
+.review-head {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+
+  margin-bottom: 26px;
+}
+
+.review-user,
+.review-content-title {
+  font-weight: normal;
+}
+
+.review-user {
+  margin-bottom: 5px;
+}
+
+.review-content-title {
+  margin-bottom: 14px;
+}
+
+.review-content-item {
+  margin-bottom: 28px;
+}
+
+.review-date {
+  font-weight: var(--light)
+}
+
+.review-content {
+  font-weight: var(--book);
+}
+
+.review-item {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 50px;
+}
+
+.btns-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.btns-middle .button-default:not(:last-child) {
+  margin-right: 44px;
+}
+
+.leave-review-block {
+  text-align: center;
+
+  padding-top: 97px;
+  
+  padding-left: 110px;
+  padding-right: 125px;
+}
+
+.leave-review-title {
+  font-size: 24px;
+  font-weight: var(--book);
+
+  margin-bottom: 47px;
+}
+
+.leave-review-input {
+  width: 100%;
+  padding: 15px 20px 14px;
+  font-weight: var(--book);
+  resize: none;
+
+  border-radius: 8px;
+
+  border: 1px solid #d4d4d4
+}
+
+textarea.leave-review-input {
+  min-height: 110px
+}
+
+.leave-review-input:hover,
+.leave-review-input:focus {
+  border-color: var(--accent)
+}
+
+.leave-review-input::placeholder {
+  color: #a9a7a4;
+}
+
+.leave-review-input.error {
+  border-color: var(--red-light)
+}
+
+.leave-review-row {
+  margin-bottom: 30px;
+}
+
+.leave-review-form-helper {
+  color: var(--red-light);
+  text-align: left;
+  font-size: 14px;
+  font-weight: var(--book);
+  margin-top: 5px;
+}
+
+.leave-review-rate {
+  margin-top: -5px;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.leave-review-star {
+  flex: 0 0 30px;
+  max-width: 30px;
+  height: 30px;
+  background-image: url(../images/razdel/rate-star.svg);
+  background-size: contain;
+
+  margin-right: 10px;
+
+  filter: grayscale(100%);
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.leave-review-star.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.leave-review-rate-inner {
+  flex: 0 0 calc(100% - 65px);
+  max-width: calc(100% - 65px);
+  display: flex;
+
+  padding-left: 30px;
+}
+
+.leave-review-rate-title {
+  flex: 0 0 65px;
+  max-width: 65px;
+  font-weight: var(--book);
+  position: relative;
+  top: 2px;
+}
+
+.leave-review-check {
+  flex: 0 0 20px;
+  max-width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+  position: relative;
+
+  appearance: none;
+}
+
+.leave-review-check::before {
+  position: absolute;
+  content: '';
+  top: 4px;
+  left: 2px;
+
+  width: 14px;
+  height: 10px;
+
+  background-image: url(../images/modal-check.svg);
+
+  transform: scale(0) rotate(-45deg);
+  transition: all .2s ease;
+}
+
+.leave-review-check:checked::before {
+  transform: scale(1.0) rotate(0deg)
+}
+
+.leave-review-submit {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.leave-review-agree {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: var(--book);
+  cursor: pointer;
+  text-align: left;
+}
+
+.leave-review-agree span {
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.leave-review-agree a {
+  color: var(--accent)
+}
+
+.history {
+  padding-top: 134px;
+}
+
+.heading-upper {
+  text-transform: uppercase !important;
+}
+
+.history-slider {
+  margin-top: 42px;
+  padding-top: 1px;
+  padding-left: 1px;
+  width: calc(100% + 1px);
+  padding-bottom: 150px;
+}
+
+.history-slider-wrap {
+  position: relative;
+}
+
+.history-slider-wrap .stock-nav {
+  top: 19%;
+}
+
+.history-slider-wrap .stock-left {
+  left: -15px;
+}
+
