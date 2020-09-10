@@ -174,10 +174,10 @@
       <div class="section-head">
         <div class="section-heading">Шины в Казани</div>
 
-        <div class="section-select">
+        <!-- <div class="section-select">
           <a href="javascript:void(0)" class="section-select-props link-light">По параметрам <img src="images/hint.svg" alt=""></a>
           <a href="javascript:void(0)" class="section-select-auto button-default button-border button-clear">По авто</a>
-        </div>
+        </div> -->
       </div>
 
       <div class="catalog-wrap row">
@@ -185,7 +185,7 @@
           <div class="catalog-filter">
             <div class="catalog-filter-close">&times;</div>
 
-            <div class="filter-title">Найдено 9 855 шин</div>
+            <div class="filter-title">В наличии 9 855 шин</div>
 
             <div class="filter-sort">
               <div class="filter-sort-title">Сортировка</div>
@@ -235,7 +235,9 @@
 
               <div class="filter-helper">
                 <a href="javascript:void(0)" class="section-select-props link-light">О параметрах <img src="images/hint.svg" alt=""></a>
-                <a href="javascript:void(0)" class="section-select-auto button-default button-blue button-clear">Подбор по авто</a>
+                <a href="javascript:void(0)" class="section-select-auto button-default button-blue button-clear" data-toggle="modal" data-target="#selectModal">
+                  Подбор по марке автомобиля
+                </a>
               </div>
             </div>
 
@@ -400,18 +402,30 @@
 
             <div class="filter-item">
               <div class="filter-head">Runflat</div>
+              <div class="filter-body">
+                {{ items }}
+              </div>
             </div>
 
             <div class="filter-item">
               <div class="filter-head">Off-road</div>
+              <div class="filter-body">
+                {{ items }}
+              </div>
             </div>
 
             <div class="filter-item">
               <div class="filter-head">Индекс скорости</div>
+              <div class="filter-body">
+                {{ items }}
+              </div>
             </div>
 
             <div class="filter-item">
               <div class="filter-head">Индекс нагрузки</div>
+              <div class="filter-body">
+                {{ items }}
+              </div>
             </div>
 
             <div class="filter-helper filter-show">
@@ -923,7 +937,7 @@
               </a>
             </div>
 
-            <a href="#" class="button-default button-red button-clear">Показать ещё</a>
+            <a href="#" class="button-default button-red button-clear button-center">Показать ещё</a>
           </div>
         </div>
       </div>
@@ -1110,6 +1124,152 @@
             </span>
           </label>
         </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="selectModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-custom modal-dialog-select">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-head">
+          <div class="modal-heading modal-heading-clear">Подбор по автомобилю</div>
+          <div class="modal-hide" data-dismiss="modal">
+            <img src="images/modal-hide.svg" alt="Закрыть">
+          </div>
+        </div>
+
+        <div class="modal-main row">
+          <div class="modal-col select-name-col">
+            <div class="modal-select-title">Марка</div>
+            <div class="modal-search-list">
+              <form class="modal-search-form">
+                <input type="text" class="modal-search-input" placeholder="Начните набирать...">
+              </form>
+
+              <div class="modal-search-inner">
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">A</div>
+                  <div class="modal-search-namelist namelist-flex">
+                    <a href="javascript:void(0)" class="modal-search-name active">Acura</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Asia</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Alfa Romeo</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Aston Martin</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Alpine</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Audi</a>
+                    <a href="javascript:void(0)" class="modal-search-name">ARO</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">B</div>
+                  <div class="modal-search-namelist namelist-flex">
+                    <a href="javascript:void(0)" class="modal-search-name active">Baic</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Borgward</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Baojun</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Brilliance</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Beiqi</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Bugatti</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Bentley</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Buick</a>
+                    <a href="javascript:void(0)" class="modal-search-name">BMW</a>
+                    <a href="javascript:void(0)" class="modal-search-name">BYD</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">C</div>
+                  <div class="modal-search-namelist namelist-flex">
+                    <a href="javascript:void(0)" class="modal-search-name">Cadillac</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Chevrolet</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Caterham</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Chinkara</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Changan</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Chrysler</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Chery</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Citroen</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">D</div>
+                  <div class="modal-search-namelist namelist-flex">
+                    <a href="javascript:void(0)" class="modal-search-name">Dacia</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Daihatsu</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Dadi</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Datsun</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Daewoo</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Derways</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-col">
+            <div class="modal-select-title">Модель</div>
+            <div class="modal-search-list">
+              <form class="modal-search-form">
+                <input type="text" class="modal-search-input" placeholder="Поиск...">
+              </form>
+
+              <div class="modal-search-inner">
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">A</div>
+                  <div class="modal-search-namelist">
+                    <a href="javascript:void(0)" class="modal-search-name active">Amarok</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Ameo</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Arteon</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Atlas</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">B</div>
+                  <div class="modal-search-namelist">
+                    <a href="javascript:void(0)" class="modal-search-name active">Beetle (A4)</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Beetle (A5)</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Bora</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Beetle (A5)</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Bora</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">C</div>
+                  <div class="modal-search-namelist">
+                    <a href="javascript:void(0)" class="modal-search-name active">C-Trek</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Caddy</a>
+                    <a href="javascript:void(0)" class="modal-search-name">California</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Caravelle</a>
+                  </div>
+                </div>
+                <div class="modal-search-item">
+                  <div class="modal-search-letter">D</div>
+                  <div class="modal-search-namelist">
+                    <a href="javascript:void(0)" class="modal-search-name active">Dacia</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Dadi</a>
+                    <a href="javascript:void(0)" class="modal-search-name">Daewoo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-col">
+            <div class="modal-select-title">Год</div>
+
+            <div class="modal-props-list">
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name active">2005 - 2010</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">2011</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">2016</a>
+            </div>
+          </div>
+          <div class="modal-col">
+            <div class="modal-select-title">Модификация</div>
+
+            <div class="modal-props-list">
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">Comfortline 1.6</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">Highline 1.4 / 1.6</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">Allstar 1.4 / 1.6</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">Trendline 1.6</a>
+              <a href="javascript:void(0)" class="modal-props-item modal-search-name">Concepline 1.6MT</a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>

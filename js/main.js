@@ -10,6 +10,13 @@ $(document).ready(function() {
           filter          = $('.responsive-filter, .catalog-filter-close'),
           overlay         = $('.overlay')
 
+    $('.filter-item').click(function () {
+        //$('.filter-item').removeClass('active')
+        $(this).toggleClass('active');
+    })
+
+    //$('#selectModal').modal('show')
+
     $('[data-toggle="tooltip"]').tooltip()
 
     burger.click(function () {
