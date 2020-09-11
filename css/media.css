@@ -448,6 +448,10 @@
 }
 
 @media (max-width: 991px) {
+  .modal-props-list {
+    margin-top: 30px;
+  }
+
   .modal-col {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1098,6 +1102,11 @@
     --modal-margin: -15px;
   }
 
+  .modal-search-input {
+    padding: 11px 15px 8px;
+    font-size: 14px;
+  }
+
   .footer > .container {
     background-size: 150px;
   }
@@ -1287,6 +1296,18 @@
     line-height: 25px;
     padding-left: 35px;
     background-position: 0 0;
+  }
+
+  .modal-heading-clear {
+    padding-left: 0;
+  }
+
+  .modal-select-title {
+    font-size: 16px;
+  }
+
+  .modal-col {
+    font-size: 14px;
   }
 
   .modal-form-input {
