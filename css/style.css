@@ -1356,7 +1356,11 @@ i.rub {
   background-color: #4b4b4b;
   color: #fff;
   padding-top: 76px;
-  padding-bottom: 57px;
+  padding-bottom: 36px;
+}
+
+.footer-col {
+  position: relative;
 }
 
 .footer-list-item {
@@ -1375,13 +1379,9 @@ i.rub {
   margin-bottom: 76px;
 }
 
-.row-footer {
-  align-items: flex-end;
-}
-
 .footer-follow-list {
   margin-top: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .footer-follow-social {
@@ -1405,10 +1405,6 @@ i.rub {
 
 .footer-payments-item:hover {
   opacity: 1;
-}
-
-.footer-col {
-  padding-bottom: 45px;
 }
 
 .footer-info p {
@@ -1778,10 +1774,27 @@ i.rub {
   background-image: url(../images/razdel/filter-arrow-down.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 9px) 53%;
+
+  cursor: pointer;
 }
 
 .filter-select option {
   font-weight: inherit;
+}
+
+.catalog-sort.filter-sort {
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.catalog-sort .filter-sort-title {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.catalog-sort .filter-select {
+  width: 221px;
 }
 
 .filter-props {
@@ -2006,13 +2019,13 @@ i.rub {
 }
 
 .product-list {
-  margin-top: 30px
+  margin-top: 21px
 }
 
 .product-item {
   border: 1px solid #dedfe0;
   position: relative;
-  padding: 15px 15px 15px;
+  padding: 15px 15px 28px;
   margin-left: -1px;
   margin-top: -1px;
 
@@ -3533,3 +3546,115 @@ textarea.leave-review-input {
   background-color: #fff;
   color: var(--red-bright)
 } */
+
+.car-type {
+  font-size: 14px;
+  margin-top: 26px;
+}
+
+.car-type-title {
+  margin-bottom: 6px;
+}
+
+.car-type-link {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--accent);
+}
+
+.car-type-controls {
+  margin-top: 42px;
+}
+
+.filter-btn {
+  padding: 11px 29px 10px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  text-decoration: none !important;
+}
+
+.filter-btn:hover {
+  color: var(--accent)
+}
+
+.filter-link {
+  padding: 0 12px;
+  color: var(--accent);
+  position: relative;
+  text-decoration: none !important;
+  overflow: hidden;
+}
+
+.filter-link:hover {
+  color: var(--accent)
+}
+
+.filter-link::before {
+  position: absolute;
+  content: '............................';
+  bottom: -3px;
+  left: 13px;
+  right: 13px;
+  font-size: 12px;
+  font-weight: var(--book);
+  overflow: hidden;
+}
+
+.filter-select-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 17px;
+
+  justify-content: space-between;
+}
+
+.filter-select-item {
+  flex: 0 0 45%;
+  max-width: 45%;
+  font-size: 14px;
+  font-weight: var(--book);
+  text-align: center;
+
+  margin-top: 11px;
+  margin-bottom: 0;
+
+  cursor: pointer;
+}
+
+.filter-select-check {
+  appearance: none;
+  -webkit-appearance: none;
+  display: none;
+}
+
+.filter-select-lay {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 12px 0 10px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.filter-select-check:checked + .filter-select-lay {
+  border-color: var(--accent);
+  color: var(--accent)
+}
+
+.iden-logo {
+  display: flex;
+  padding-bottom: 48px;
+  width: 81px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iden-logo-abs {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+}

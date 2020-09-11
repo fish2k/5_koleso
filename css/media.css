@@ -181,6 +181,10 @@
     border-width: 0 0 20px 20px;
   } */
 
+  .iden-logo-abs {
+    right: 0;
+  }
+
   .reviews-inner {
     padding-left: 0;
   }
@@ -448,6 +452,15 @@
 }
 
 @media (max-width: 991px) {
+  .header-fixed .header-main-inner:not(.header-main-responsive) {
+    display: none;
+  }
+
+  .iden-logo-abs {
+    position: static;
+    margin-top: 25px;
+  }
+
   .modal-props-list {
     margin-top: 30px;
   }
@@ -724,6 +737,20 @@
   .namelist-flex .modal-search-name {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .footer-follow-social {
+    margin-right: 5px;
+  }
+
+  .footer-follow-social img {
+    max-width: 70%;
+  }
+
+  .iden-logo-abs {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 
   .page-wrap > .container {
@@ -1100,6 +1127,16 @@
   :root {
     --modal-padding: 15px;
     --modal-margin: -15px;
+  }
+
+  .catalog-sort .filter-sort-title {
+    margin-right: 15px;
+    font-size: 12px;
+  }
+
+  .catalog-sort .filter-select {
+    font-size: 12px;
+    width: 170px;
   }
 
   .modal-search-input {

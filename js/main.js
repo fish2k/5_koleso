@@ -40,26 +40,36 @@ $(document).ready(function() {
         body.removeClass("state-nav state-search state-filter")
     })
 
-    // fixed header
-    if ( $(window).innerWidth() > 991 ) {
-        $(window).scroll(function () {
-            var st = $(this).scrollTop()
-    
-            if (st >= headerOffset) {
-                $('.header-fixed-placeholder').css({
-                    height: headerMain.innerHeight() + 'px',
-                    marginBottom: 30
-                })
-                headerMain.addClass('header-fixed')
-            } else {
-                $('.header-fixed-placeholder').css({
-                    height: 0,
-                    marginBottom: 0
-                })
-                headerMain.removeClass('header-fixed')
-            }
-        })
+    const responsiveHooks = function (getWidth) {
+        // fixed header
+        if ( getWidth >= 991 ) {
+            $(window).scroll(function () {
+                var st = $(this).scrollTop()
+
+                if (st >= headerOffset) {
+                    $('.header-fixed-placeholder').css({
+                        height: headerMain.innerHeight() + 'px',
+                        marginBottom: 30
+                    })
+                    headerMain.addClass('header-fixed')
+                } else {
+                    $('.header-fixed-placeholder').css({
+                        height: 0,
+                        marginBottom: 0
+                    })
+                    headerMain.removeClass('header-fixed')
+                }
+            })
+        }
     }
+
+    $(window).resize(function () {
+        var currentWidth = $(this).innerWidth();
+
+        responsiveHooks(currentWidth)
+    });
+
+    responsiveHooks($(this).innerWidth());
     
     // кастомная реализация select -> option
     formPropsList.click(function () {
