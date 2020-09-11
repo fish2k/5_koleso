@@ -3653,8 +3653,48 @@ textarea.leave-review-input {
   background-size: contain;
 }
 
+.page-default > .container {
+  background-image: none;
+}
+
 .iden-logo-abs {
   position: absolute;
   top: 4px;
   right: 20px;
+}
+
+.row-stock {
+  margin-top: 46px;
+  font-weight: var(--book);
+  border-bottom: 1px solid transparent;
+}
+
+.stock-img {
+  float: left;
+  max-width: 50%;
+  margin-right: 30px;
+}
+
+.stock-post-date {
+  padding-top: 27px;
+  padding-bottom: 22px;
+  font-weight: var(--book);
+  color: #898682
+}
+
+.row-stock p {
+  margin-bottom: 21px;
+}
+
+.stock-stocks > .container {
+  padding-top: 67px;
+  padding-bottom: 152px;
+}
+
+.review-page-row {
+  margin-top: 40px;
+}
+
+.review-controls {
+  margin-left: -32px;
 }

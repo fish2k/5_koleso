@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  
+  <title>5koleso</title>
+
+  <!-- other styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=fallback" rel="stylesheet">
+  <link rel="stylesheet" href="js/ion/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- common styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ion/ion.rangeSlider.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <a href="/" class="header-logo">
+            <img src="images/logo.svg" alt="5koleso">
+          </a>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/pin.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-city">
+                <span class="header-info-link-name">Казань</span>
+              </a>
+              <div class="header-info-desc">33 пункта выдачи</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/phone.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="tel:88006001122" class="header-info-link header-info-link-tel">
+                <span class="header-info-link-name">8 800 600 11-22</span>
+              </a>
+              <div class="header-info-desc">Горячая линия</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="header-info">
+            <div class="header-info-icon"><img src="images/callback.svg" alt=""></div>
+            <div class="header-info-body">
+              <a href="javascript:void(0)" class="header-info-link header-info-link-callback" data-toggle="modal" data-target="#callModal">
+                <span class="header-info-link-name">Заказать звонок</span>
+              </a>
+              <div class="header-info-desc">Перезвоним Вам</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+            <span class="header-cart-title">Корзина</span>
+            <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-fixed-placeholder"></div>
+  
+  <div class="header-main">
+    <div class="container">
+      <div class="header-main-inner">
+        <a href="/" class="fixed-logo"><img src="images/logo-min.svg" alt=""></a>
+
+        <div class="fixed-contacts">
+          <div class="fixed-contacts-item">
+            <a href="javascript:void(0)" class="fixed-contacts-link link-city"> <span>Казань</span></a>
+          </div>
+          <div class="fixed-contacts-item">
+            <a href="tel:88006001122" class="fixed-contacts-link link-tel"> <span>8 800 600 11-22</span></a>
+          </div>
+        </div>
+
+        <div class="header-nav">
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/1.svg" alt=""><span>Шины</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/2.svg" alt=""><span>Диски</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/4.svg" alt=""><span class="fixed-hide">Акции</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/5.svg" alt=""><span class="fixed-hide">Отзывы</span>
+            </a>
+          </div>
+          <div class="header-nav-item">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/6.svg" alt=""><span class="fixed-hide">Контакты</span>
+            </a>
+          </div>
+          <div class="header-nav-item header-nav-drop">
+            <a href="javascript:void(0)" class="header-nav-link">
+              <img src="images/nav-icons/7.svg" alt=""><span class="fixed-hide">Покупателям</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header-group">
+          <form class="header-search">
+            <input type="text" class="header-search-input" placeholder="Поиск">
+          </form>
+  
+          <div class="fixed-cart">
+            <a href="javascript:void(0)" class="header-cart cart-has-items" data-items-count="12">
+              <span class="header-cart-title">Корзина</span>
+              <span class="header-cart-total">35 800 <i class="rub">₽</i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main-inner header-main-responsive">
+        <a href="/" class="header-responsive-logo">
+          <img src="images/logo-min.svg" alt="">
+        </a>
+
+        <div class="header-responsive-buttons">
+          <a href="javascript:void(0)" class="responsive-action responsive-search"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-cart"></a>
+          <a href="javascript:void(0)" class="responsive-action responsive-nav">
+            <div class="header-burger">
+              <div class="burger-line line-1"></div>
+              <div class="burger-line line-2"></div>
+              <div class="burger-line line-3"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-responsive">
+    <form class="search-responsive-form">
+      <input type="text" class="search-responsive-input" placeholder="Начните вводить...">
+    </form>
+  </div>
+
+  <div class="page-wrap page-default">
+    <div class="container">
+      <div class="breadcrumbz">
+        <a href="/" class="breadcrumbz-item">Главная</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Акции</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Бесплатная доставка</a>
+      </div>
+
+      <div class="section-head">
+        <div class="section-heading">Бесплатная доставка</div>
+      </div>
+
+      <div class="row-stock">
+        <img src="images/stocks/large/4.png" alt="" class="stock-img">
+        <div class="stock-post-date">11.09.2020</div>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании модели развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании модели развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании модели развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании модели развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших направлений развития. Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании модели развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
+        <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section stocks stock-stocks">
+    <div class="container">
+      <div class="section-head-flex">
+        <div class="section-heading">Акции</div>
+        <a href="javascript:void(0)" class="flex-link link-catalog">Все акции</a>
+      </div>
+
+      <div class="stock-slider-wrapper">
+        <div class="stock-nav">
+          <div class="stock-nav-item stock-prev">
+            <img src="images/stocks/prev.svg" alt="">
+          </div>
+          <div class="stock-nav-item stock-next">
+            <img src="images/stocks/next.svg" alt="">
+          </div>
+        </div>
+
+        <div class="stock-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/1.png);">
+                <div class="stock-slide-title">
+                  Бесплатная <br>доставка
+                </div>
+                <div class="stock-slide-desc"></div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">Бесплатная доставка</div>
+                  <div class="stock-slide-exp">Бессрочная акция</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/2.png);">
+                <div class="stock-slide-title">
+                  Шиномонтаж <br>
+                  в пункте выдачи <br>
+                  <span>бесплатно*</span>
+                </div>
+                <div class="stock-slide-desc">
+                  * при покупке комплекта шин <br>
+                  или дисков.
+                </div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Шиномонтаж в пункте <br>
+                    выдачи бесплатно
+                  </div>
+                  <div class="stock-slide-exp">Акция действует до 31.08.2020</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/3.png);">
+                <div class="stock-slide-title">
+                  Скидка <br>
+                  постоянного клиента <br>
+                  <span>в подарок</span> <br>
+                  к покупке
+                </div>
+                <div class="stock-slide-desc">
+                  От 5% до 15% на все услуги <br>
+                  сети шиномонтажей <br>
+                  «5 КОЛЕСО».
+                </div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Скидка постоянного <br>
+                    клиента в подарок <br>
+                    к покупке
+                  </div>
+                  <div class="stock-slide-exp">Бессрочная акция</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide stock-slide">
+              <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/4.png);">
+                <div class="stock-slide-title">
+                  <span>Правильное</span> <br>
+                  сезонное <br>
+                  хранение <br>
+                  Ваших колёс
+                </div>
+                <div class="stock-slide-desc"></div>
+              </div>
+              <div class="stock-slide-col stock-slide-right">
+                <div class="stock-slide-row">
+                  <div class="stock-slide-info">
+                    Правильное сезонное <br>
+                    хранение Ваших колёс
+                  </div>
+                  <div class="stock-slide-exp">Акция действует до 31.08.2020</div>
+                </div>
+                <div class="stock-slide-row">
+                  <a href="" class="button-default button-light button-border">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <script>
+        const stockSlider = new Swiper('.stock-slider', {
+          slidesPerView: 2,
+          spaceBetween: 30,
+
+          on: {
+            init: function () {
+              this.el.style.opacity = 1
+            }
+          },
+
+          navigation: {
+            prevEl: '.stock-prev',
+            nextEl: '.stock-next'
+          },
+
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              autoHeight: true
+            },
+            1200: {
+              slidesPerView: 2
+            }
+          },
+
+          autoplay: {
+            delay: 3000
+          }
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <div class="container">
+      <div class="row row-contact no-gutters">
+        <div class="col-contact">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="images/phone-call.svg" alt="" class="contact-icon-src">
+            </div>
+            <div class="contact-body">
+              <a href="tel:88006001122" class="contact-title">8 800 600 11-22</a>
+              <div class="contact-desc">Горячая линия 24/7</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="images/phone-callback.svg" alt="" class="contact-icon-src">
+            </div>
+            <div class="contact-body">
+              <a href="javascript:void(0)" class="contact-title" data-toggle="modal" data-target="#callModal">Заказать звонок</a>
+              <div class="contact-desc">Мы перезвоним Вам</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-subscribe">
+          <form class="contact-form">
+            <div class="contact-title">Акции и скидки</div>
+            <div class="contact-form-desc">Доставим выгодные предложения на Вашу почту!</div>
+            <div class="contact-row">
+              <input type="text" class="contact-form-input" placeholder="Ваш e-mail">
+              <button class="contact-form-button button-default button-border button-clear">Подписаться</button>
+            </div>
+            <div class="contact-form-agree">
+              Нажимая на кнопку "Подписаться" Вы соглашаетесь с <a class="contact-link" href="javascript:void(0)">условиями</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row row-links">
+        <div class="col-md-2 col-6">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Шины</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Диски</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Бренды</a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Услуги</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Акции</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Отзывы</a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Доставка</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оплата</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Гарантия</a></div>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">О магазине</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Онлайн-запись</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Контакты</a></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-catalog-product">
+          <div class="footer-list">
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Политика конфиденциальности</a></div>
+            <div class="footer-list-item"><a href="javascript:void(0)" class="footer-list-link">Оферта</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-footer">
+        <div class="col-md-6">
+          <div class="footer-info">
+            <p>Интернет-магазин шин и дисков в Казани 5колесо.</p>
+            <p>Федеральная сеть «5 колесо» 2010 - 2020.</p>
+            <p>Все права защищены.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-col">
+            <div class="footer-foollow">
+              <div class="footer-follow-title">Следите за нами в соцсетях!</div>
+              <div class="footer-follow-list">
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/vk.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/yt.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/fb.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/ig.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/ok.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/tg.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/tw.svg" alt=""></a>
+                <a href="javascript:void(0)" class="footer-follow-social"><img src="images/socials/wa.svg" alt=""></a>
+              </div>
+            </div>
+  
+            <div class="footer-payments">
+              <img src="images/payments/visa.svg" alt="visa" class="footer-payments-item">
+              <img src="images/payments/maestro.svg" alt="maestro" class="footer-payments-item">
+              <img src="images/payments/mastercard.svg" alt="mastercard" class="footer-payments-item">
+            </div>
+
+            <a href="javascript:void(0)" class="iden-logo iden-logo-abs" style="background-image: url(images/iden-light.svg);"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-custom">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-head">
+          <div class="modal-heading">Заказать звонок</div>
+          <div class="modal-hide" data-dismiss="modal">
+            <img src="images/modal-hide.svg" alt="Закрыть">
+          </div>
+        </div>
+
+        <form class="modal-form">
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="Анатолий" required>
+          </div>
+          <div class="modal-form-row">
+            <input type="text" class="modal-form-input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <button class="modal-form-submit button-default button-light button-red-hover button-clear" type="submit">Заказать звонок</button>
+          <label class="modal-form-agree">
+            <input type="checkbox" class="modal-form-check">
+            <span class="modal-form-agree-text">
+              Я согласен(-а) с <a href="javascript:void(0)">условиями</a> политики <br>
+              конфиденциальности.
+            </span>
+          </label>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
