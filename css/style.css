@@ -3042,16 +3042,7 @@ i.rub {
   font-weight: var(--book);
 }
 
-.leave-review-button {
-  border-color: var(--red-light);
-  color: var(--red-light)
-}
 
-.leave-review-button:hover {
-  background-color: var(--red-bright);
-  color: #fff;
-  border-color: var(--red-bright)
-}
 
 .reviews-show {
   margin-top: 43px;
@@ -3526,3 +3517,19 @@ textarea.leave-review-input {
   flex-direction: column;
   margin-top: 92px;
 }
+
+.leave-review-button {
+  border-color: var(--red-light);
+  color: var(--red-light)
+}
+
+.leave-review-button:hover {
+  background-color: var(--red-bright);
+  color: #fff;
+  border-color: var(--red-bright)
+}
+
+/* .leave-review-button:focus {
+  background-color: #fff;
+  color: var(--red-bright)
+} */
