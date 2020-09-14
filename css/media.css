@@ -9,6 +9,34 @@
     max-width: 100%;
   }
 
+  .datepicker--cell-day {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .addr-map-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .addr-map-time {
+    margin-top: 0;
+    margin-left: 15px;
+    background-position: 0 4px;
+  }
+
+  .addr-map-col:first-child {
+    margin-bottom: 10px;
+  }
+
+  .addr-collectData,
+  .addr-success {
+    padding: 20px;
+  }
+
   .reviews-show-item {
     margin-bottom: 20px;
     margin-right: 15px;
@@ -161,6 +189,12 @@
 
   .header-nav-link span {
     font-size: 14px;
+  }
+
+  .addr-map-link {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -452,6 +486,77 @@
 }
 
 @media (max-width: 991px) {
+  .contacts-item {
+    margin-bottom: 30px;
+  }
+
+  .addr-success-image {
+    max-width: 100px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .contacts-addr-item {
+    padding: 15px;
+  }
+
+  .addr-time {
+    width: 290px;
+  }
+
+  .addr-time-item {
+    padding: 7px 0;
+    font-size: 14px;
+  }
+
+  .app-steps-list {
+    margin-bottom: 30px;
+  }
+
+  .addr-map-bar {
+    font-size: 12px;
+  }
+
+  .contacts-addr-name {
+    font-size: 14px;
+  }
+
+  .app-step {
+    font-size: 16px;
+    background-size: 10px;
+    padding-left: 20px;
+
+    align-items: flex-start;
+  }
+
+  .datepicker--cell-day {
+    height: 29px;
+  }
+
+  .datepicker-inline .custom-picker {
+    width: 266px;
+  }
+
+  .app-step-count {
+    font-size: 20px;
+    flex: 0 0 20px;
+    max-width: 20px;
+    margin-right: 5px;
+  }
+
+  .app-step-name {
+    padding-top: 2px;
+    position: static;
+  }
+
+  .addr-map {
+    height: 350px;
+  }
+
+  .zapis-map {
+    height: 450px;
+  }
+
   .review-controls {
     margin-left: 0;
     flex-wrap: wrap;
@@ -1148,12 +1253,63 @@
   .modal-search-inner {
     max-height: 300px;
   }
+
+  .addr-form-label {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .addr-form {
+    margin-top: 20px;
+  }
+
+  .addr-form-input {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 95px;
+  }
+
+  .addr-form-label-abs {
+    font-size: 14px;
+    top: 11px;
+    left: 25px;
+  }
 }
 
 @media (max-width: 480px) {
   :root {
     --modal-padding: 15px;
     --modal-margin: -15px;
+  }
+
+  .addr-map {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0 !important;
+  }
+
+  .row-contacts {
+    margin-top: 0
+  }
+
+  .contacts-req {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .zapis-map {
+    height: 400px;
+  }
+
+  .addr-map-bar {
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    padding: 15px 10px;
+
+    border-radius: 0;
   }
 
   .stock-nav-item {
@@ -1691,6 +1847,12 @@
   .button-clear {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .addr-map-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
   }
 
   .main-slide {

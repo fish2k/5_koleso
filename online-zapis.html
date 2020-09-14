@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="js/datepicker/css/datepicker.min.css">
 
   <!-- common styles -->
   <link rel="stylesheet" href="css/style.css">
@@ -21,6 +22,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/ion/ion.rangeSlider.min.js"></script>
+  <script src="js/datepicker/js/datepicker.min.js"></script>
 </head>
 <body>
   <div class="header">
@@ -167,123 +169,152 @@
     <div class="container">
       <div class="breadcrumbz">
         <a href="/" class="breadcrumbz-item">Главная</a>
-        <a href="javascript:void(0)" class="breadcrumbz-item">Контакты</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Онлайн-запись на шиномонтаж</a>
       </div>
 
       <div class="section-head">
-        <div class="section-heading">Контакты</div>
+        <div class="section-heading">Онлайн-запись на шиномонтаж</div>
       </div>
 
-      <div class="row row-contacts">
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/1.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="javascript:void(0)" class="contacts-name">Казань</a>
-              <div class="contacts-desc">33 пункта выдачи</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/2.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="tel:88006001122" class="contacts-name">8 800 600 11-22</a>
-              <div class="contacts-desc">Горячая линия</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/3.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <div class="contacts-name">24/7</div>
-              <div class="contacts-desc">Круглосуточно</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/4.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="javascript:void(0)" class="contacts-name">clients@5k.ru</a>
-              <div class="contacts-desc">Email</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-points">
-        <div class="col-12">
-          <div class="points-heading">
-            Пункты выдачи в Казани
-          </div>
-        </div>
+      <div class="row row-online-app">
         <div class="col-lg-6">
-          <div class="contacts-addr">
-            <div class="contacts-addr-list">
-              <div class="contacts-addr-item active">
-                <div class="contacts-addr-name">Горьковское шоссе, 49</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Оренбургский тракт 170</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Клара Цеткин, 8б</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
+          <div class="app-steps-list">
+            <div class="app-step app-step-1 active">
+              <div class="app-step-count">1.</div>
+              <div class="app-step-name">Шиномонтаж</div>
+            </div>
+            <div class="app-step app-step-2 active">
+              <div class="app-step-count">2.</div>
+              <div class="app-step-name">Выберите точку обслуживания</div>
+            </div>
+            <div class="app-step app-step-3">
+              <div class="app-step-count">3.</div>
+              <div class="app-step-name">Выберите день и время</div>
+            </div>
+            <div class="app-step app-step-4">
+              <div class="app-step-count">4.</div>
+              <div class="app-step-name">Заполните контакты и подтвердите</div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-          <div id="selectPointsMap" class="addr-map">
-            <img src="images/contacts/map.jpg" alt="">
+          <form class="zapisForm">
+            <div id="selectAddr" class="addr-map zapis-map">
+              <img src="images/zapis/map.jpg" alt="">
+  
+              <div class="addr-overlay">
+                <div class="addr-date" id="selectDate"></div>
+                <div class="addr-time">
+                  <div class="addr-heading">6 августа</div>
+                  <div class="addr-time-list">
+                    <div class="addr-time-item disabled">00:00</div>
+                    <div class="addr-time-item disabled">01:00</div>
+                    <div class="addr-time-item disabled">02:00</div>
+                    <div class="addr-time-item disabled">03:00</div>
+                    <div class="addr-time-item disabled">04:00</div>
+                    <div class="addr-time-item disabled">05:00</div>
+                    <div class="addr-time-item disabled">06:00</div>
+                    <div class="addr-time-item disabled">07:00</div>
+                    <div class="addr-time-item disabled">08:00</div>
+                    <div class="addr-time-item disabled">09:00</div>
+                    <div class="addr-time-item disabled">10:00</div>
+                    <div class="addr-time-item disabled">11:00</div>
+                    <div class="addr-time-item disabled">12:00</div>
+                    <div class="addr-time-item disabled">13:00</div>
+                    <div class="addr-time-item disabled">14:00</div>
+                    <div class="addr-time-item disabled">15:00</div>
+                    <div class="addr-time-item disabled">16:00</div>
+                    <div class="addr-time-item disabled">17:00</div>
+                    <div class="addr-time-item">18:00</div>
+                    <div class="addr-time-item">19:00</div>
+                    <div class="addr-time-item">20:00</div>
+                    <div class="addr-time-item">21:00</div>
+                    <div class="addr-time-item">22:00</div>
+                    <div class="addr-time-item">23:00</div>
+                  </div>
+                </div>
+  
+                <div class="addr-collectData">
+                  <div class="addr-heading">Контакты и данные</div>
+                  <div class="addr-form">
+                    <div class="addr-form-label"><div class="addr-form-label-abs">Имя</div><input type="text" id="zapisName" class="addr-form-input" required id="" placeholder="Сергей"></div>
+                    <div class="addr-form-label"><div class="addr-form-label-abs">Гос №</div><input type="text" id="" class="addr-form-input"></div>
+                    <div class="addr-form-label"><div class="addr-form-label-abs">Телефон</div><input type="text" id="" class="addr-form-input" placeholder="+7 (___) ___-__-__"></div>
+                    <div class="addr-form-label">
+                      <select name="reminder" id="reminder" class="addr-form-input">
+                        <option value="1">Напомнить за 1 час</option>
+                        <option value="2">Напомнить за 2 часа</option>
+                        <option value="3">Напомнить за 3 часа</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="addr-map-bar">
-              <div class="addr-map-city">Горьковское шоссе, 49</div>
-              <div class="addr-map-button button-default button-red button-clear">Построить маршрут</div>
+                <div class="addr-success">
+                  <div class="addr-heading"><span class="zapis-name"></span>, Ваша запись подтверждена!</div>
+
+                  <img src="images/zapis/check-success.svg" alt="" class="addr-success-image">
+
+                  <p>Мы будем ждать вас по адресу: <b>Казань, Горьковское шоссе, 49 в 18:00</b>.</p>
+                  <p>Спасибо за Ваш выбор!</p>
+                </div>
+              </div>
+  
+              <div class="addr-map-bar app-zapis">
+                <div class="addr-bar-step addr-bar-step-1 active">
+                  <div class="addr-map-col">
+                    <div class="addr-map-city">Горьковское шоссе, 49</div>
+                    <!-- <div class="addr-map-time">6 августа</div> -->
+                  </div>
+                  <div class="addr-map-col">
+                    <!-- <a href="javascript:void(0)" class="addr-map-change-point button-default button-border button-clear">Изменить точку</a> -->
+                    <a href="javascript:void(0)" class="addr-map-button button-default button-red button-clear select-point">Выбрать</a>
+                  </div>
+                </div>
+                <div class="addr-bar-step addr-bar-step-2">
+                  <div class="addr-map-col">
+                    <div class="addr-map-city">Горьковское шоссе, 49</div>
+                    <div class="addr-map-time"><span class="addr-day"></span></div>
+                  </div>
+                  <div class="addr-map-col">
+                    <a href="javascript:void(0)" class="addr-map-change-point button-default button-border button-clear">Изменить точку</a>
+                    <a href="javascript:void(0)" class="addr-map-button button-default button-red button-clear select-time disabled">Выбрать</a>
+                  </div>
+                </div>
+                <div class="addr-bar-step addr-bar-step-3">
+                  <div class="addr-map-col">
+                    <div class="addr-map-city">Горьковское шоссе, 49</div>
+                    <div class="addr-map-time"><span class="addr-day"></span> <span class="addr-time-get"></span></div>
+                  </div>
+                  <div class="addr-map-col">
+                    <a href="javascript:void(0)" class="addr-map-change-date button-default button-border button-clear">Изменить дату</a>
+                    <a href="javascript:void(0)" class="addr-map-button button-default button-red button-clear get-time disabled">Выбрать</a>
+                  </div>
+                </div>
+                <div class="addr-bar-step addr-bar-step-4">
+                  <div class="addr-map-col">
+                    <div class="addr-map-city">Горьковское шоссе, 49</div>
+                    <div class="addr-map-time"><span class="addr-day"></span> <span class="addr-time-get"></span></div>
+                  </div>
+                  <div class="addr-map-col">
+                    <a href="javascript:void(0)" class="addr-map-change-point button-default button-border button-clear">Изменить</a>
+                    <button class="addr-map-button button-default button-red button-clear zapis" type="submit">Записаться</button>
+                  </div>
+                </div>
+
+                <div class="addr-bar-step addr-bar-step-5">
+                  <div class="addr-map-col">
+                    <div class="addr-map-route">Маршрут</div>
+                  </div>
+                  <div class="addr-map-col">
+                    <a href="javascript:void(0)" class="addr-map-link button-default button-border button-clear">2ГИС</a>
+                    <a href="javascript:void(0)" class="addr-map-link button-default button-border button-clear">Яндекс Карты</a>
+                    <a href="javascript:void(0)" class="addr-map-link button-default button-border button-clear google-m">Google Карты</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contacts-req">
-        <div class="points-heading">Реквизиты</div>
-
-        <div class="contacts-req-info">
-          ООО Такое-то<br>
-          ОГРН: 15646514561615648<br>
-          г. Казань, пр-т Мира, 225
+          </form>
         </div>
       </div>
 
@@ -440,5 +471,6 @@
   <div class="overlay"></div>
 
   <script src="js/main.js"></script>
+  <script src="js/zapis.js"></script>
 </body>
 </html>

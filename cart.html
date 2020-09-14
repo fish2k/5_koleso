@@ -12,10 +12,15 @@
   <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="js/datepicker/css/datepicker.min.css">
 
   <!-- common styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
+
+  <!-- cart styles -->
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/cart_media.css">
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -167,123 +172,175 @@
     <div class="container">
       <div class="breadcrumbz">
         <a href="/" class="breadcrumbz-item">Главная</a>
-        <a href="javascript:void(0)" class="breadcrumbz-item">Контакты</a>
+        <a href="javascript:void(0)" class="breadcrumbz-item">Корзина</a>
       </div>
 
       <div class="section-head">
-        <div class="section-heading">Контакты</div>
+        <div class="section-heading">Корзина</div>
       </div>
 
-      <div class="row row-contacts">
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/1.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="javascript:void(0)" class="contacts-name">Казань</a>
-              <div class="contacts-desc">33 пункта выдачи</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/2.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="tel:88006001122" class="contacts-name">8 800 600 11-22</a>
-              <div class="contacts-desc">Горячая линия</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/3.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <div class="contacts-name">24/7</div>
-              <div class="contacts-desc">Круглосуточно</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="contacts-item">
-            <div class="contacts-icon">
-              <img src="images/contacts/4.svg" alt="">
-            </div>
-            <div class="contacts-body">
-              <a href="javascript:void(0)" class="contacts-name">clients@5k.ru</a>
-              <div class="contacts-desc">Email</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-points">
-        <div class="col-12">
-          <div class="points-heading">
-            Пункты выдачи в Казани
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="contacts-addr">
-            <div class="contacts-addr-list">
-              <div class="contacts-addr-item active">
-                <div class="contacts-addr-name">Горьковское шоссе, 49</div>
-                <div class="contacts-addr-button"></div>
+      <div class="cart-inner">
+        <div class="cart-layout order-step-1">
+          <div class="cart-row row">
+            <div class="cart-content col-lg-9">
+              <div class="cart-block">
+                <div class="cart-table">
+                  <div class="cart-table-product">
+                    <div class="cart-table-product-item cart-table-item">
+                      <a href="javascript:void(0)" class="cart-table-product-photo" style="background-image: url(images/cart-product.jpg);"></a>
+                      <a href="javascript:void(0)" class="cart-table-product-name">Шина Nokian Nordman 7 175/65 R15 T 88</a>
+                    </div>
+                    <div class="cart-table-product-count cart-table-item">
+                      <div class="cart-table-product-counter">
+                        <div class="cart-counter-item">&ndash;</div>
+                        <input class="cart-counter-item cart-counter-value" type="text" value="3">
+                        <div class="cart-counter-item">+</div>
+                      </div>
+                    </div>
+                    <div class="cart-table-product-price cart-table-item">
+                      <div class="cart-table-product-prices">
+                        <div class="cart-table-product-price-old">3 220<i class="rub">₽</i></div>
+                        <div class="cart-table-product-price-new">2 940<i class="rub">₽</i></div>
+                      </div>
+                    </div>
+                    <div class="cart-table-product-remove">
+                      <img src="images/cart-remove.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="cart-table-product">
+                    <div class="cart-table-product-item cart-table-item">
+                      <a href="javascript:void(0)" class="cart-table-product-photo" style="background-image: url(images/cart-montage.jpg);"></a>
+                      <a href="javascript:void(0)" class="cart-table-product-name">Бесплатный шиномонтаж <br><span>при покупке комплекта шин или дисков.</span></a>
+                    </div>
+                    <div class="cart-table-product-count cart-table-item">
+                      <div class="cart-table-product-counter">
+                        <div class="cart-counter-item">&ndash;</div>
+                        <input class="cart-counter-item cart-counter-value" type="text" value="3">
+                        <div class="cart-counter-item">+</div>
+                      </div>
+                    </div>
+                    <div class="cart-table-product-price cart-table-item">
+                      <div class="cart-table-product-prices">
+                        <div class="cart-table-product-price-new">0<i class="rub">₽</i></div>
+                      </div>
+                    </div>
+                    <div class="cart-table-product-remove">
+                      <img src="images/cart-remove.svg" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Оренбургский тракт 170</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Клара Цеткин, 8б</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
-              </div>
-              <div class="contacts-addr-item">
-                <div class="contacts-addr-name">Мамадышский тракт, 8а</div>
-                <div class="contacts-addr-button"></div>
+            </div>
+            <div class="cart-side col-lg-3">
+              <div class="cart-block cart-block-sticky">
+                <div class="cart-side-inner">
+                  <div class="cart-side-item">
+                    <div class="cart-side-title">1 товар на сумму</div>
+                    <div class="cart-side-body">12 880<i class="rub">₽</i></div>
+                  </div>
+                  <div class="cart-side-item">
+                    <div class="cart-side-title">Скидка</div>
+                    <div class="cart-side-body">1 120<i class="rub">₽</i></div>
+                  </div>
+    
+                  <div class="cart-side-total">
+                    <div class="cart-side-total-title">Итого</div>
+                    <div class="cart-side-total-value">11 760<i class="rub">₽</i></div>
+                  </div>
+    
+                  <!-- <a href="javascript:void(0)" class="button-default button-clear button-red cart-button cart-order-button">Оформить заказ</a> -->
+                  <a href="javascript:void(0)" class="button-default button-clear button-red cart-button">Оформить заказ</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div id="selectPointsMap" class="addr-map">
-            <img src="images/contacts/map.jpg" alt="">
-
-            <div class="addr-map-bar">
-              <div class="addr-map-city">Горьковское шоссе, 49</div>
-              <div class="addr-map-button button-default button-red button-clear">Построить маршрут</div>
+  
+        <form id="orderForm" class="cart-layout order-step-2" style="display: none">
+          <div class="cart-row row">
+            <div class="cart-content col-lg-9">
+              <div class="cart-block cart-block-main">
+                <div class="cart-content-item">
+                  <div class="cart-content-flex">
+                    <div class="cart-content-title">Получение заказа</div>
+                    <a href="javascript:void(0)" class="cart-content-city cart-link">Казань</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="cart-side cart-side-order col-lg-3">
+              <div class="cart-block cart-block-sticky">
+                <div class="cart-side-item">
+                  <div class="cart-side-title">1 товар на сумму</div>
+                  <div class="cart-side-body">11 760<i class="rub">₽</i></div>
+                </div>
+                <div class="cart-side-item-product">
+                  <div class="cart-side-product">
+                    Шина Nokian Nordman 7 175/65 R15 T 88
+                    — 4 шт
+                  </div>
+                </div>
+                <div class="cart-side-item-product">
+                  <div class="cart-side-product">
+                    Бесплатная доставка до пункта выдачи
+                  </div>
+                </div>
+                <div class="cart-side-item-product">
+                  <div class="cart-side-product">
+                    Бесплатный шиномонтаж в пункте выдачи
+                  </div>
+                </div>
+                <a href="javascript:void(0)" class="cart-side-link cart-link gotocart">Ввести промокод</a>
+                <a href="javascript:void(0)" class="cart-side-link cart-link gotocart">Вернуться в корзину</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="contacts-req">
-        <div class="points-heading">Реквизиты</div>
-
-        <div class="contacts-req-info">
-          ООО Такое-то<br>
-          ОГРН: 15646514561615648<br>
-          г. Казань, пр-т Мира, 225
+        </form>
+  
+        <div class="cart-layout order-step-3" style="display: none">
+          <div class="cart-row row">
+            <div class="cart-content col-12">
+              <div class="cart-block">
+                <div class="row">
+                  <div class="cart-success-col">
+                    <div class="cart-content-item">
+                      <div class="cart-content-flex">
+                        <div class="cart-content-title">Заказ успешно оформлен и оплачен!</div>
+                      </div>
+      
+                      <div class="cart-success">
+                        <div class="cart-success-item">
+                          <div class="cart-success-title">Детали заказа</div>
+                          <div class="cart-success-info">9 товаров на сумму 4 850 руб.</div>
+                          <div class="cart-success-list">
+                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                          </div>
+                        </div>
+                        <div class="cart-success-item">
+                          <div class="cart-success-title">Доставка</div>
+                          <div class="cart-success-info">Доставка курьером магазина</div>
+                          <div class="cart-success-list">
+                            <div class="cart-success-list-item">Адрес доставки: Альметьевск, Аминова, 20Г, 44</div>
+                            <div class="cart-success-list-item">Дата доставки: ВС, 19 июня, время доставки 12:00-18:00</div>
+                            <div class="cart-success-list-item">Получатель: Михаил, 89876543210</div>
+                            <div class="cart-success-list-item">Оплата: Онлайн</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-success-col">
+                    <div class="cart-success-image">
+                      <img src="images/cart-success.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -440,5 +497,6 @@
   <div class="overlay"></div>
 
   <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
