@@ -2727,6 +2727,12 @@ i.rub {
   font-weight: var(--book);
 }
 
+.addr-map-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .row-stocks-list {
   margin-top: 46px;
   padding-bottom: 120px;
