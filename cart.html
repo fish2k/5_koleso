@@ -26,6 +26,8 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/ion/ion.rangeSlider.min.js"></script>
+
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
 </head>
 <body>
   <div class="header">
@@ -248,8 +250,7 @@
                     <div class="cart-side-total-value">11 760<i class="rub">₽</i></div>
                   </div>
     
-                  <!-- <a href="javascript:void(0)" class="button-default button-clear button-red cart-button cart-order-button">Оформить заказ</a> -->
-                  <a href="javascript:void(0)" class="button-default button-clear button-red cart-button">Оформить заказ</a>
+                  <a href="javascript:void(0)" class="button-default button-clear button-red cart-button cart-order-button">Оформить заказ</a>
                 </div>
               </div>
             </div>
@@ -265,8 +266,78 @@
                     <div class="cart-content-title">Получение заказа</div>
                     <a href="javascript:void(0)" class="cart-content-city cart-link">Казань</a>
                   </div>
+
+                  <div class="row-cart-select">
+                    <label class="cart-content-select">
+                      <input type="checkbox" class="cart-content-check" checked> <span>Бесплатная доставка до пункта выдачи</span>
+                    </label>
+                  </div>
                 </div>
                 
+                <div class="cart-map-inner">
+                  <div id="cartMap" style="width: 100%; height: 500px;"></div>
+                  
+                  <div class="cart-map-select">
+                    <div class="cart-map-select-inner">
+                      <div class="cart-map-city">Выберите точку</div>
+                      <a href="javascript:void(0)" class="cart-map-button button-default button-red button-clear" data-selected="">Выбрать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content-item cart-payment-type">
+                  <div class="cart-content-flex">
+                    <div class="cart-content-title">Оплата заказа</div>
+                  </div>
+
+                  <div class="row-cart-select">
+                    <label class="cart-content-select">
+                      <input type="checkbox" class="cart-content-check" checked> 
+                      <span>
+                        <b>Онлайн</b>
+                        <em>Онлайн-оплата банковской картой Visa, <br>
+                        Visa Electron, MasterCard, Maestro, Мир</em>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="cart-order">
+                  <div class="cart-content-title">Данные получателя</div>
+
+                  <div class="row cart-order-form">
+                    <div class="col-md-4 col-form">
+                      <input type="text" class="cart-order-input" placeholder="Имя*" required>
+                    </div>
+                    <div class="col-md-4 col-form">
+                      <input type="text" class="cart-order-input" placeholder="Фамилия*" required>
+                    </div>
+                    <div class="col-md-4 col-form">
+                      <input type="text" class="cart-order-input" placeholder="Отчество">
+                    </div>
+                    <div class="col-md-4 col-form">
+                      <input type="text" class="cart-order-input" placeholder="Телефон*" required>
+                    </div>
+                    <div class="col-md-4 col-form">
+                      <input type="text" class="cart-order-input" placeholder="Email">
+                    </div>
+                    <div class="col-md-4 col-form">
+                      <div class="cart-email-help">
+                        Ваш email необходим лишь для отправки 
+                        онлайн-чека после совершения покупки.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cart-order-helper">* помечены поля обязательные к заполнению</div>
+
+                  <label class="cart-order-agree">
+                    <input type="checkbox" class="cart-content-check" checked> 
+                    <span>Я согласен(-а) с условиями политики конфиденциальности</span>
+                  </label>
+
+                  <button class="order-button button-default button-light button-clear">Подтвердить и оплатить</button>
+                </div>
               </div>
             </div>
             <div class="cart-side cart-side-order col-lg-3">
@@ -291,8 +362,10 @@
                     Бесплатный шиномонтаж в пункте выдачи
                   </div>
                 </div>
-                <a href="javascript:void(0)" class="cart-side-link cart-link gotocart">Ввести промокод</a>
-                <a href="javascript:void(0)" class="cart-side-link cart-link gotocart">Вернуться в корзину</a>
+                <div class="cart-links">
+                  <a href="javascript:void(0)" class="cart-side-link cart-link">Ввести промокод</a>
+                  <a href="javascript:void(0)" class="cart-side-link cart-link gotocart">Вернуться в корзину</a>
+                </div>
               </div>
             </div>
           </div>
@@ -312,21 +385,21 @@
                       <div class="cart-success">
                         <div class="cart-success-item">
                           <div class="cart-success-title">Детали заказа</div>
-                          <div class="cart-success-info">9 товаров на сумму 4 850 руб.</div>
+                          <div class="cart-success-info">1 товар на сумму 11 760</div>
                           <div class="cart-success-list">
-                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
-                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
-                            <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                            <div class="cart-success-list-item">Шина Nokian Nordman 7 175/65 R15 T 88 — 4 шт</div>
+                            <div class="cart-success-list-item">Шина Nokian Nordman 7 175/65 R15 T 88 — 4 шт</div>
                           </div>
                         </div>
                         <div class="cart-success-item">
                           <div class="cart-success-title">Доставка</div>
-                          <div class="cart-success-info">Доставка курьером магазина</div>
+                          <!-- <div class="cart-success-info">Бесплатная доставка до пункта выдачи.</div> -->
                           <div class="cart-success-list">
-                            <div class="cart-success-list-item">Адрес доставки: Альметьевск, Аминова, 20Г, 44</div>
-                            <div class="cart-success-list-item">Дата доставки: ВС, 19 июня, время доставки 12:00-18:00</div>
-                            <div class="cart-success-list-item">Получатель: Михаил, 89876543210</div>
-                            <div class="cart-success-list-item">Оплата: Онлайн</div>
+                            <div class="cart-success-list-item">Бесплатная доставка до пункта выдачи.</div>
+                            <div class="cart-success-list-item">Адрес доставки: Казань, Горьковское шоссе, 49</div>
+                            <div class="cart-success-list-item">Дата доставки: 14.19.2020</div>
+                            <div class="cart-success-list-item">Получатель: Сергей Г.</div>
+                            <div class="cart-success-list-item">Ожидайте SMS о точной дате доставки!</div>
                           </div>
                         </div>
                       </div>
