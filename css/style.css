@@ -2423,13 +2423,27 @@ i.rub {
   flex: 0 0 40px;
   min-width: 40px;
   height: 40px;
+  margin-right: 5px;
 
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+.responsive-action:last-child {
+  margin-right: 0;
+}
+
+.r-nav {
+  display: none;
+}
+
 .responsive-search {
   background-image: url(../images/nav-icons/nav-search.svg);
+  background-size: 24px;
+}
+
+.responsive-phone {
+  background-image: url(../images/phone-light.svg);
   background-size: 24px;
 }
 
@@ -2453,7 +2467,7 @@ i.rub {
   position: absolute;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 2px;
 
   background-color: #fff;
 
@@ -2465,11 +2479,11 @@ i.rub {
 }
 
 .line-2 {
-  top: 12px;
+  top: 13px;
 }
 
 .line-3 {
-  top: 21px;
+  top: 23px;
 }
 
 .state-nav .line-1 {
