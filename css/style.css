@@ -878,6 +878,9 @@ i.rub {
   text-align: center;
   min-height: 286px;
   padding-top: 90px;
+
+  color: var(--dark) !important;
+  text-decoration: none !important;
 }
 
 .service-image {
@@ -2003,11 +2006,6 @@ i.rub {
 .filter-price-item {
   flex: 0 0 calc(50% - 10px);
   max-width: calc(50% - 10px);
-}
-
-.filter-btn {
-  width: 100%;
-  justify-content: center;
 }
 
 .filter-show {
@@ -3578,10 +3576,14 @@ textarea.leave-review-input {
 }
 
 .car-type-controls {
-  margin-top: 42px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .filter-btn {
+  flex: 0 0 130px;
+  max-width: 130px;
   padding: 11px 29px 10px;
   color: var(--accent);
   border: 1px solid var(--accent);
