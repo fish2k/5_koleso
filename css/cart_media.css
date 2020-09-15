@@ -107,6 +107,13 @@
         max-width: 70%;
     }
 
+    .cart-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
     .cart-success-right {
         flex: 0 0 30%;
         max-width: 30%;
@@ -119,11 +126,38 @@
     .cart-block {
         margin: 0;
     }
+
+    .cart-order {
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 767px) {
     .cart-inner {
         margin-bottom: 40px;
+    }
+
+    /* .cart-success-col {
+        padding-left: 15px;
+        padding-right: 15px;
+    } */
+
+    .cart-map-select {
+        display: flex;
+        justify-content: center;
+        bottom: 50px;
+    }
+
+    .cart-map-select-inner {
+        width: auto;
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #cartMap {
+        height: 400px;
     }
 
     .cart-row {
@@ -262,8 +296,8 @@
     }
 
     .cart-success-col {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .cart-success-col:nth-child(2) {
@@ -326,6 +360,8 @@
 
     .cart-content-title {
         font-size: 16px;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .cart-content-city {
@@ -339,9 +375,8 @@
     }
 
     .cart-content-city {
-        flex: 0 0 100%;
-        max-width: 100%;
         margin-top: 10px;
+        background-position: 1px 0;
     }
 
     .deli-data-style {
@@ -350,6 +385,82 @@
         border-radius: 20px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .cart-map-inner {
+        margin-bottom: 40px;
+    }
+
+    .cart-order {
+        margin-top: 40px;
+    }
+
+    .cart-email-help {
+        padding-top: 0;
+        margin-bottom: 0px;
+    }
+
+    .cart-map-select {
+        bottom: 40px;
+    }
+
+    .cart-email-help,
+    .cart-order-helper {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .cart-order-agree span {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .cart-side-order .cart-block {
+        font-size: 14px;
+    }
+
+    .col-form {
+        margin-bottom: 15px;
+    }
+
+    .cart-order-input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .cart-content-city::before {
+        left: 15px;
+    }
+
+    .cart-content-select span {
+        margin-left: 15px;
+        padding-top: 3px;
+    }
+
+    #cartMap {
+        height: 350px;
+    }
+
+    .cart-map-select-inner {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .cart-map-city {
+        background-position: 0 0;
+        line-height: 16px;
+    }
+
+    .cart-content-select {
+        font-size: 14px;
+    }
+
+    .cart-content-select em {
+        font-size: 12px;
+    }
+
+    .cart-content-select b {
+        margin-bottom: 3px;
     }
 
     .select-list-name {

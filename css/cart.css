@@ -741,6 +741,11 @@ textarea.order-info-input {
     border-radius: 25px;
 }
 
+#cartMap {
+    width: 100%;
+    height: 500px;
+}
+
 .cart-map-button {
     padding-top: 11px;
     padding-bottom: 10px;

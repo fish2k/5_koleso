@@ -1044,8 +1044,15 @@ i.rub {
   border-radius: 50px;
   cursor: pointer;
   /* box-shadow: 0 0 0 0 rgba(0,0,0, 0); */
-  box-shadow: 5px 5px 25px 0 rgba(0,0,0, .1);
   transition: all .13s ease;
+}
+
+.stock-next {
+  box-shadow: 7px 12px 30px 0 rgba(19, 19, 19, .15);
+}
+
+.stock-prev {
+  box-shadow: -11.491px 9.642px 30px 0px rgba(19, 19, 19, 0.15);
 }
 
 .stock-nav-item:hover {
@@ -1686,6 +1693,10 @@ i.rub {
   opacity: .5;
   left: 2px;
   right: 29px;
+}
+
+.section-select-props:hover::before {
+  opacity: 0 !important;
 }
 
 .filter-reset::before {
