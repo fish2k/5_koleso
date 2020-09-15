@@ -37,6 +37,7 @@ $(document).ready(function() {
         var step3 = setTimeout(() => {
             $(".order-step-3").fadeIn(delay);
             title.text("Заказ №156498");
+            title.addClass('heading-success')
 
             clearTimeout(step3);
         }, delay);
