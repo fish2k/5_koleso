@@ -503,6 +503,47 @@
     margin-bottom: 30px;
   }
 
+  .detail-tab-content {
+    font-size: 14px;
+    padding: 30px;
+  }
+
+  .leave-review-agree span {
+    padding-left: 15px;
+  }
+
+  .review-item-user {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
+
+  .review-item-body {
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+  }
+
+  .reviews-inner {
+    font-size: 14px;
+  }
+
+  .leave-review-button {
+    font-size: 14px;
+  }
+
+  .detail-description {
+    font-size: 14px;
+  }
+
+  .detail-description ul > li {
+    background-position: 0px 4px;
+    background-size: 7px;
+    padding-left: 15px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+  }
+
   .product-name {
     font-size: 14px;
     height: 47px;
@@ -980,16 +1021,6 @@
     font-size: 14px;
   }
 
-  .detail-description {
-    font-size: 14px;
-  }
-
-  .detail-description ul > li {
-    background-position: 0px 4px;
-    background-size: 7px;
-    padding-left: 15px;
-  }
-
   .detail-tab-slider {
     height: 250px;
   }
@@ -1317,6 +1348,32 @@
   :root {
     --modal-padding: 15px;
     --modal-margin: -15px;
+  }
+
+  .review-content-title {
+    margin-bottom: 5px;
+  }
+
+  .leave-review-rate-title {
+    font-size: 14px;
+  }
+
+  .history {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .history-slider {
+    padding-bottom: 0;
+  }
+
+  .leave-review-row,
+  .leave-review-rate {
+    margin-bottom: 15px;
+  }
+
+  .review-content-item {
+    margin-bottom: 15px;
   }
 
   .addr-map {
