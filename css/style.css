@@ -944,7 +944,7 @@ i.rub {
 .stock-slide-col {
   flex: 0 0 50%;
   max-width: 50%;
-  padding: 30px 0px 22px 25px;
+  
 
   
 }
@@ -953,6 +953,7 @@ i.rub {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px 0px 22px 25px;
 }
 
 .stock-slide-image {
@@ -2427,6 +2428,16 @@ i.rub {
 
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.customize-form-close {
+  display: none;
+  font-size: 12px;
+}
+
+.customize-form-close span {
+  font-size: 22px;
+  margin-right: 5px;
 }
 
 .responsive-action:last-child {
@@ -4256,4 +4267,41 @@ select.addr-form-input {
 
 .addr-map-link:last-child {
   margin-right: 0;
+}
+
+.r-customize {
+  font-size: 14px;
+  display: none;
+}
+
+.r-customize-item {
+  padding: 15px 15px 15px;
+  margin-bottom: 15px;
+
+  background-color: #f3f4f4;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) top;
+  background-size: 90px;
+}
+
+.r-customize-item:last-child {
+  margin-bottom: 0;
+}
+
+.r-customize-name {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.r-customize-desc {
+  font-size: 12px;
+}
+
+.r-shini {
+  background-image: url(../images/razdel/shina.png);
+}
+
+.r-diski {
+  background-image: url(../images/disk.png);
 }

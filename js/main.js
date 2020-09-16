@@ -8,7 +8,7 @@ $(document).ready(function() {
           burger          = $('.header-burger')
           search          = $('.responsive-search'),
           filter          = $('.responsive-filter, .catalog-filter-close'),
-          overlay         = $('.overlay')
+          overlay         = $('.overlay, .customize-form-close')
 
     $('.filter-item').click(function () {
         //$('.filter-item').removeClass('active')
@@ -36,8 +36,13 @@ $(document).ready(function() {
         body.toggleClass('state-filter')
     })
 
-    overlay.on("click", function () {
+    $('.r-shini, .r-diski').click(function () {
         body.removeClass("state-nav state-search state-filter")
+        body.addClass('state-customize')
+    })
+
+    overlay.on("click", function () {
+        body.removeClass("state-nav state-search state-filter state-customize")
     })
 
     const responsiveHooks = function (getWidth) {

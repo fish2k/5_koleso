@@ -210,7 +210,7 @@
                   <div class="main-slide-info">До ближайшего к Вам пункта выдачи-шиномонтажа "5 КОЛЕСО".</div>
                 </div>
                 <div class="main-slide-footer">
-                  <a href="javascript:void(0)" class="button-default button-red">Подробнее</a>
+                  <a href="javascript:void(0)" class="button-default button-red main-slide-btn">Подробнее</a>
                 </div>
               </div>
               <div class="swiper-slide main-slide main-slide-2" style="background-image: url(images/main-slider-images/2.png)">
@@ -223,7 +223,7 @@
                   </div>
                 </div>
                 <div class="main-slide-footer">
-                  <a href="javascript:void(0)" class="button-default button-red">Подробнее</a>
+                  <a href="javascript:void(0)" class="button-default button-red main-slide-btn">Подробнее</a>
                 </div>
               </div>
               <div class="swiper-slide main-slide main-slide-3" style="background-image: url(images/main-slider-images/3.png)">
@@ -241,7 +241,7 @@
                   </div>
                 </div>
                 <div class="main-slide-footer">
-                  <a href="javascript:void(0)" class="button-default button-red">Подробнее</a>
+                  <a href="javascript:void(0)" class="button-default button-red main-slide-btn">Подробнее</a>
                 </div>
               </div>
               <div class="swiper-slide main-slide main-slide-4" style="background-image: url(images/main-slider-images/4.png)">
@@ -258,12 +258,13 @@
                   </div>
                 </div>
                 <div class="main-slide-footer">
-                  <a href="javascript:void(0)" class="button-default button-red">Подробнее</a>
+                  <a href="javascript:void(0)" class="button-default button-red main-slide-btn">Подробнее</a>
                 </div>
               </div>
             </div>
 
             <div class="slider-main-pagination"></div>
+            <div class="slider-main-dots"></div>
           </div>
 
           <script>
@@ -282,6 +283,19 @@
                 type: 'fraction'
               },
 
+              breakpoints: {
+                0: {
+                  pagination: {
+                    type: 'bullets'
+                  }
+                },
+                480: {
+                  pagination: {
+                    type: 'fraction'
+                  }
+                }
+              },
+
               autoplay: {
                 delay: 3000
               }
@@ -291,6 +305,8 @@
         <div class="col-md-6">
           <div class="slider-section-podbor">
             <form class="customize-form">
+              <div class="customize-form-close"><span>&times;</span> закрыть форму</div>
+
               <div class="customize-form-select">
                 <a href="javascript:void(0)" class="customize-form-item active">
                   <span>Шины</span>
@@ -549,6 +565,17 @@
                 <a href="javascript:void(0)" class="button-default button-menu">Каталог</a>
               </div>
             </form>
+
+            <div class="r-customize">
+              <div class="r-customize-item r-shini">
+                <div class="r-customize-name">Шины</div>
+                <div class="r-customize-desc">Подбор по параметрам <br>или авто</div>
+              </div>
+              <div class="r-customize-item r-diski">
+                <div class="r-customize-name">Диски</div>
+                <div class="r-customize-desc">Подбор по параметрам <br>или авто</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -620,12 +647,12 @@
         </div>
 
         <div class="row row-buy-product no-gutters">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="buy-product-item">
               <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/shini/1.jpg);"></a>
               <div class="buy-product-body">
                 <div class="buy-product-head">
-                  <div class="buy-product-name">Летние шины <img src="images/product-icons/sun.svg" alt=""></div>
+                  <div class="buy-product-name"><span>Летние шины</span> <img src="images/product-icons/sun.svg" alt=""></div>
                   <div class="buy-product-info">19 105 шин в каталоге</div>
                 </div>
                 <div class="buy-product-foot">
@@ -639,12 +666,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="buy-product-item">
               <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/shini/2.jpg);"></a>
               <div class="buy-product-body">
                 <div class="buy-product-head">
-                  <div class="buy-product-name">Зимние шины <img src="images/product-icons/snowflake.svg" alt=""> <img src="images/product-icons/sh.svg" alt=""></div>
+                  <div class="buy-product-name"><span>Зимние шины</span> <img src="images/product-icons/snowflake.svg" alt=""> <img src="images/product-icons/sh.svg" alt=""></div>
                   <div class="buy-product-info">17 983 шины в каталоге</div>
                 </div>
                 <div class="buy-product-foot">
@@ -683,12 +710,12 @@
         </div>
 
         <div class="row row-buy-product no-gutters">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="buy-product-item">
               <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/diski/1.jpg);"></a>
               <div class="buy-product-body">
                 <div class="buy-product-head">
-                  <div class="buy-product-name">Литые диски</div>
+                  <div class="buy-product-name"><span>Литые диски</span></div>
                   <div class="buy-product-info">9 801 диск в каталоге</div>
                 </div>
                 <div class="buy-product-foot">
@@ -702,12 +729,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="buy-product-item">
               <a href="javascript:void(0)" class="buy-product-photo" style="background-image: url(images/diski/2.jpg);"></a>
               <div class="buy-product-body">
                 <div class="buy-product-head">
-                  <div class="buy-product-name">Штампованные диски</div>
+                  <div class="buy-product-name"><span>Штампованные диски</span></div>
                   <div class="buy-product-info">3 855 штампованных дисков в каталоге</div>
                 </div>
                 <div class="buy-product-foot">
@@ -751,13 +778,17 @@
 
             breakpoints: {
               320: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                slidesPerColumn: 3,
+                slidesPerColumnFill: 'row',
+                spaceBetween: 0
               },
-              768: {
-                slidesPerView: 3
+              480: {
+                slidesPerColumn: 1,
+                slidesPerColumnFill: 'column'
               },
               991: {
-                slidesPerView: 4
+                slidesPerView: 4,
               },
               1200: {
                 slidesPerView: 5
@@ -851,7 +882,7 @@
 
             breakpoints: {
               0: {
-                slidesPerView: 1
+                slidesPerView: 2
               },
               768: {
                 slidesPerView: 2
@@ -890,10 +921,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide stock-slide">
               <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/1.png);">
-                <div class="stock-slide-title">
-                  Бесплатная <br>доставка
-                </div>
-                <div class="stock-slide-desc"></div>
+                <img src="images/stocks/large/1.png" alt="">
               </div>
               <div class="stock-slide-col stock-slide-right">
                 <div class="stock-slide-row">
@@ -907,15 +935,7 @@
             </div>
             <div class="swiper-slide stock-slide">
               <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/2.png);">
-                <div class="stock-slide-title">
-                  Шиномонтаж <br>
-                  в пункте выдачи <br>
-                  <span>бесплатно*</span>
-                </div>
-                <div class="stock-slide-desc">
-                  * при покупке комплекта шин <br>
-                  или дисков.
-                </div>
+                <img src="images/stocks/large/2.png" alt="">
               </div>
               <div class="stock-slide-col stock-slide-right">
                 <div class="stock-slide-row">
@@ -932,17 +952,7 @@
             </div>
             <div class="swiper-slide stock-slide">
               <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/3.png);">
-                <div class="stock-slide-title">
-                  Скидка <br>
-                  постоянного клиента <br>
-                  <span>в подарок</span> <br>
-                  к покупке
-                </div>
-                <div class="stock-slide-desc">
-                  От 5% до 15% на все услуги <br>
-                  сети шиномонтажей <br>
-                  «5 КОЛЕСО».
-                </div>
+                <img src="images/stocks/large/3.png" alt="">
               </div>
               <div class="stock-slide-col stock-slide-right">
                 <div class="stock-slide-row">
@@ -960,13 +970,7 @@
             </div>
             <div class="swiper-slide stock-slide">
               <div class="stock-slide-col stock-slide-image" style="background-image: url(images/stocks/4.png);">
-                <div class="stock-slide-title">
-                  <span>Правильное</span> <br>
-                  сезонное <br>
-                  хранение <br>
-                  Ваших колёс
-                </div>
-                <div class="stock-slide-desc"></div>
+                <img src="images/stocks/large/4.png" alt="">
               </div>
               <div class="stock-slide-col stock-slide-right">
                 <div class="stock-slide-row">
