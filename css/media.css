@@ -1508,8 +1508,21 @@
     width: 100%;
   }
 
+  .r-podbor {
+    display: none;
+  }
+
   .r-catalog {
     display: block;
+  }
+
+  .filter-link {
+    color: #4b4b4b;
+    font-size: 12px;
+  }
+
+  .car-type-controls {
+    margin-bottom: 15px;
   }
 
   .page-wrap > .container::before {

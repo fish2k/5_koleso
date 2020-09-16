@@ -3617,7 +3617,7 @@ textarea.leave-review-input {
 .car-type-link {
   font-size: 16px;
   font-weight: normal;
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .car-type-controls {
