@@ -517,11 +517,38 @@
           </div>
         </div>
         <div class="catalog-col catalog-content">
+          <div class="r-catalog">
+            <div class="r-catalog-total">В наличии 9 855 шин</div>
+
+            <div class="car-type">
+              <div class="car-type-title">Для автомобиля</div>
+              <a href="javascript:void(0)" class="car-type-link">Volkswagen Jetta Седан Highline 1.4 / 1.6 2011</a>
+
+              <div class="car-type-controls">
+                <a href="javascript:void(0)" class="button-default button-red button-clear"><span>Изменить</span></a>
+                <a href="javascript:void(0)" class="filter-link">Удалить</a>
+              </div>
+            </div>
+
+            <a href="javascript:void(0)" class="button-default button-clear button-red responsive-filter">Подбор шин/дисков</a>
+
+            <div class="filter-sort catalog-sort r-sort">
+              <div class="filter-sort-title">Сортировка</div>
+  
+              <select class="filter-select" name="sortBy" id="sortBy">
+                <option value="0" selected>По популярности</option>
+                <option value="1">По возрастанию цены</option>
+                <option value="2">По убыванию цены</option>
+              </select>
+            </div>
+          </div>
+
           <div class="catalog-slider swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide catalog-slider-slide slide-1" style="background-image: url(images/razdel/slider/1.png);">
                 <div class="catalog-slider-title">Бесплатная доставка</div>
                 <div class="catalog-slider-desc">До ближайшего к Вам пункта выдачи-шиномонтажа "5 КОЛЕСО".</div>
+                <img class="catalog-slider-alt" src="images/stocks/large/1.png" alt="">
               </div>
               <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/2.png);">
                 <div class="catalog-slider-title">
@@ -531,6 +558,7 @@
                 <div class="catalog-slider-desc">
                   * при покупке комплекта шин или дисков.
                 </div>
+                <img class="catalog-slider-alt" src="images/stocks/large/2.png" alt="">
               </div>
               <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/3.png);">
                 <div class="catalog-slider-title">
@@ -538,12 +566,14 @@
                   <span>в подарок</span> к покупке
                 </div>
                 <div class="catalog-slider-desc">От 5% до 15% на все услуги сети шиномонтажей «5 КОЛЕСО».</div>
+                <img class="catalog-slider-alt" src="images/stocks/large/3.png" alt="">
               </div>
               <div class="swiper-slide catalog-slider-slide slide-2" style="background-image: url(images/razdel/slider/4.png);">
                 <div class="catalog-slider-title">
                   <span>Правильное</span> <br>
                   сезонное хранение Ваших колёс
                 </div>
+                <img class="catalog-slider-alt" src="images/stocks/large/4.png" alt="">
               </div>
             </div>
 
@@ -1369,9 +1399,9 @@
     </div>
   </div>
 
-  <div class="overlay"></div>
+  <div class="responsive-filter-btn">Подбор</div>
 
-  <div class="responsive-filter">Фильтр</div>
+  <div class="overlay"></div>
 
   <script src="js/main.js"></script>
 </body>

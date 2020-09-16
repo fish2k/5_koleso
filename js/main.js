@@ -7,7 +7,7 @@ $(document).ready(function() {
           body            = $('body'),
           burger          = $('.header-burger')
           search          = $('.responsive-search'),
-          filter          = $('.responsive-filter, .catalog-filter-close'),
+          filter          = $('.responsive-filter, .catalog-filter-close, .responsive-filter-btn, .filter-close'),
           overlay         = $('.overlay, .customize-form-close')
 
     $('.filter-item').click(function () {

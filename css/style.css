@@ -1721,6 +1721,10 @@ i.rub {
   justify-content: center;
 }
 
+.catalog-slider-alt {
+  display: none;
+}
+
 .catalog-slider-title {
   font-size: 36px;
   font-weight: 600;
@@ -2564,7 +2568,7 @@ i.rub {
   color: #fff;
 }
 
-.responsive-filter {
+.responsive-filter-btn {
   display: none;
   position: fixed;
   right: 15px;
@@ -2573,7 +2577,7 @@ i.rub {
   padding: 10px 20px;
   border-radius: 30px;
 
-  background-color: var(--accent);
+  background-color: var(--red-light);
   color: #fff;
   font-weight: normal;
   font-size: 14px;
@@ -2581,8 +2585,12 @@ i.rub {
   z-index: 5;
 }
 
+.r-catalog {
+  display: none;
+}
+
 .catalog-filter-close {
-  font-size: 32px;
+  font-size: 45px;
   line-height: 30px;
   width: 32px;
   height: 32px;
@@ -2590,7 +2598,7 @@ i.rub {
   text-align: center;
 
   position: absolute;
-  top: 8px;
+  top: 16px;
   right: 8px;
 
   color: var(--accent);
@@ -4305,4 +4313,13 @@ select.addr-form-input {
 
 .r-diski {
   background-image: url(../images/disk.png);
+}
+
+.filter-close {
+  margin-top: 20px;
+  display: none;
+}
+
+.filter-close::before {
+  right: 0;
 }
