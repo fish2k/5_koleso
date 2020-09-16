@@ -305,8 +305,6 @@
         <div class="col-md-6">
           <div class="slider-section-podbor">
             <form class="customize-form">
-              <div class="customize-form-close"><span>&times;</span> закрыть форму</div>
-
               <div class="customize-form-select">
                 <a href="javascript:void(0)" class="customize-form-item active">
                   <span>Шины</span>
@@ -561,8 +559,9 @@
               </div>
 
               <div class="customize-form-footer">
-                <button class="button-default" type="submit">Подобрать</button>
+                <button class="button-default customize-submit" type="submit">Подобрать</button>
                 <a href="javascript:void(0)" class="button-default button-menu">Каталог</a>
+                <a href="javascript:void(0)" class="button-default button-clear button-red-hover customize-form-close">Закрыть</a>
               </div>
             </form>
 
@@ -778,14 +777,10 @@
 
             breakpoints: {
               320: {
-                slidesPerView: 2,
-                slidesPerColumn: 3,
-                slidesPerColumnFill: 'row',
-                spaceBetween: 0
+                slidesPerView: 3
               },
               480: {
-                slidesPerColumn: 1,
-                slidesPerColumnFill: 'column'
+                slidesPerColumn: 1
               },
               991: {
                 slidesPerView: 4,

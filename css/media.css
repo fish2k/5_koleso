@@ -369,7 +369,7 @@
   }
 
   .contact-item {
-    flex: 0 0 100%;
+    flex: unset;
     max-width: 100%;
   }
 
@@ -476,8 +476,13 @@
 
   .form-props-list-inner {
     font-size: 12px;
-    padding: 12px 10px;
+    padding: 14px 10px;
     background-size: 8px;
+  }
+
+  .form-props-drop {
+    right: 10px;
+    left: 10px;
   }
 
   .form-props-drop-select {
@@ -519,7 +524,8 @@
     
     padding-left: 13px;
     padding-right: 13px;
-    padding-top: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 
     order: 0
   }
@@ -845,7 +851,7 @@
 
   .catalog-filter {
     position: fixed;
-    top: 50px;
+    top: 64px;
     left: -280px;
     width: 280px;
     bottom: 0;
@@ -915,7 +921,7 @@
     position: fixed;
     top: 64px;
     bottom: 0;
-    left: -280px;
+    right: -280px;
     z-index: 4;
 
     width: 280px;
@@ -925,7 +931,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 5px;
+    padding-top: 0;
 
     transition: all .2s ease;
   }
@@ -938,10 +944,34 @@
   .header-nav-link {
     padding-top: 15px;
     padding-bottom: 15px;
+
+    position: relative;
+  }
+
+  .header-nav-link::before {
+    position: absolute;
+    content: '';
+    top: 40%;
+    right: 25px;
+
+    width: 10px;
+    height: 10px;
+    
+    border-width: 1px 1px 0 0;
+    border-color: #b0b0b0;
+    border-style: solid;
+
+    transform: rotate(45deg);
+
+    transition: all .2s ease;
+  }
+
+  .header-nav-link:hover::before {
+    border-color: #fff;
   }
 
   .state-nav .header-nav {
-    left: 0;
+    right: 0;
   }
 
   body {
@@ -1280,7 +1310,7 @@
   }
 
   .contact-form-input {
-    padding: 12px 15px;
+    padding: 15px;
     font-size: 14px;
   }
 
@@ -1464,8 +1494,21 @@
     --modal-margin: -15px;
   }
 
+  .customize-form-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .contact-form-agree {
     text-align: center;
+  }
+
+  .customize-submit {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+    background-image: none;
+    margin-bottom: 15px;
   }
 
   .contact-form {
@@ -1474,7 +1517,7 @@
   }
 
   .header-nav {
-    left: -100%;
+    right: -100%;
     width: 100%;
   }
 
@@ -1509,8 +1552,8 @@
   }
 
   .form-props-check-item {
-    flex: 0 0 calc(50% - 1px);
-    max-width: calc(50% - 1px);
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .buy-product-item:hover {
@@ -2044,6 +2087,10 @@
 
   .stock-slide-info {
     font-size: 16px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 38px;
+    overflow: hidden;
   }
 
   .stock-slider {
@@ -2127,6 +2174,8 @@
     order: 1;
     margin-bottom: 0;
     margin-top: 15px;
+    font-weight: var(--light);
+    font-size: 11px;
   }
 
   .buy-product-foot {
@@ -2176,10 +2225,33 @@
   
   .form-props-check {
     flex-wrap: wrap;
+    padding-left: 1px;
+    margin-top: 15px;
   }
 
   .form-props-check-item {
     margin-top: -1px;
+  }
+
+  .form-props-check-item:nth-child(1) .form-props-check-name {
+    border-top-left-radius: 5px !important;
+  }
+
+  .form-props-check-item:nth-child(2) .form-props-check-name {
+    border-top-right-radius: 5px;
+  }
+
+  .form-props-check-item:nth-child(3) .form-props-check-name {
+    border-bottom-left-radius: 5px;
+  }
+
+  .form-props-check-item:nth-child(4) .form-props-check-name {
+    border-bottom-right-radius: 5px !important;
+  }
+
+  .form-props-check-name {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .form-props-check-item:last-child .form-props-check-name {
@@ -2211,8 +2283,8 @@
   .button-default {
     font-size: 12px;
 
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     padding-left: 15px;
     padding-right: 30px;
 
@@ -2265,13 +2337,14 @@
   .slider-main-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    opacity: 0.4;
+    opacity: 0.2;
 
-    background-color: var(--red-light);
+    background-color: var(--dark);
   }
 
   .slider-main-pagination .swiper-pagination-bullet-active {
     opacity: 1;
+    background-color: var(--red-light);
   }
 
   .main-slide-title {
@@ -2287,19 +2360,19 @@
   .customize-form {
     position: fixed;
     top: 64px;
-    left: -100%;
+    right: -100%;
     width: 100%;
     bottom: 0;
     overflow-y: auto;
     background-color: #fff;
     z-index: 10;
-    padding: 15px;
+    padding: 30px 15px 15px;
 
     transition: all .3s ease;
   }
 
   .state-customize .customize-form {
-    left: 0;
+    right: 0;
   }
 
   .section-features > .container {
@@ -2307,16 +2380,12 @@
   }
 
   .customize-form-close {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 15px;
-    color: #4b4b4b;
+    display: block
   }
 
-  .customize-form-close span {
+  /* .customize-form-close span {
     color: var(--accent)
-  }
+  } */
 
   .customize-form-hint {
     display: none;
@@ -2331,8 +2400,9 @@
     border: 1px solid #d4d4d4;
     margin-right: 0;
 
-    width: 100%;
-    padding: 12px 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 14px 15px;
 
     font-size: 12px !important;
     font-weight: var(--book);
@@ -2340,13 +2410,13 @@
   }
 
   .customize-form-item:first-child {
-    border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   .customize-form-item:last-child {
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
   }
 
   .customize-form-item.active {

@@ -606,6 +606,7 @@ i.rub {
 }
 
 .form-props-check-type {
+  display: none;
   appearance: none;
   -webkit-appearance: none;
   position: absolute;
