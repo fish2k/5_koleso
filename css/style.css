@@ -499,7 +499,7 @@ i.rub {
 
 .customize-form-item.active,
 .customize-form-item:hover {
-  color: var(--accent);
+  color: var(--dark);
   text-decoration: none;
 }
 
@@ -509,7 +509,7 @@ i.rub {
 
 .customize-form-item.active span,
 .customize-form-item:hover span {
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--dark);
 }
 
 .customize-form-select-by .customize-form-item {
