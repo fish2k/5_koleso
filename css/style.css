@@ -4309,8 +4309,8 @@ select.addr-form-input {
 
   background-color: #f3f4f4;
   background-repeat: no-repeat;
-  background-position: calc(100% - 20px) center;
-  background-size: auto 80%;
+  background-position: calc(100% - 15px) center;
+  background-size: auto calc(100% - 30px);
 }
 
 .r-customize-item:last-child {
