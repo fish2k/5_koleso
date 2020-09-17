@@ -295,6 +295,11 @@
         order: 1;
     }
 
+    .cart-success-list-item,
+    .cart-side-item-product {
+        font-weight: var(--book);
+    }
+
     .order-button {
         width: 100%;
         justify-content: center;

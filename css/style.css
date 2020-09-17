@@ -2602,12 +2602,13 @@ i.rub {
 }
 
 .search-responsive {
-  background-color: var(--accent);
+  background-color: var(--dark-light);
   position: fixed;
-  top: 50px;
+  top: 64px;
   left: 0;
   right: 0;
   z-index: 8;
+  padding: 10px;
 
   display: none;
 }
@@ -2623,7 +2624,7 @@ i.rub {
   padding: 12px 0;
   background-color: transparent;
 
-  border-bottom: 2px solid var(--accent-hover);
+  border-bottom: 1px solid #777;
   background-image: url(../images/nav-icons/nav-search.svg);
   background-repeat: no-repeat;
   background-position: 15px center;
