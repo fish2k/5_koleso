@@ -2733,7 +2733,7 @@ i.rub {
 }
 
 .detail-slider-thumbs .swiper-slide-thumb-active {
-  border-color: var(--accent);
+  border-color: var(--red-light);
 }
 
 .detail-slider-thumbs {
