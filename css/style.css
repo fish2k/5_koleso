@@ -4309,8 +4309,8 @@ select.addr-form-input {
 
   background-color: #f3f4f4;
   background-repeat: no-repeat;
-  background-position: calc(100% - 10px) top;
-  background-size: 90px;
+  background-position: calc(100% - 20px) center;
+  background-size: auto 80%;
 }
 
 .r-customize-item:last-child {
@@ -4328,7 +4328,7 @@ select.addr-form-input {
 }
 
 .r-shini {
-  background-image: url(../images/razdel/shina.png);
+  background-image: url(../images/shina.png);
 }
 
 .r-diski {
