@@ -296,7 +296,9 @@
     }
 
     .cart-success-list-item,
-    .cart-side-item-product {
+    .cart-side-item-product,
+    .cart-side-order .cart-side-title,
+    .cart-success-info {
         font-weight: var(--book);
     }
 
