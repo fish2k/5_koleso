@@ -586,11 +586,11 @@
     padding-left: 9px;
   }
 
-  .r-nav-item .link-light::before, 
+  /* .r-nav-item .link-light::before, 
   .r-nav-item .about-link::before, 
   .r-nav-item .header-info-link::before {
     background-image: url(../images/dots-light.png);
-  }
+  } */
 
   .row-stock {
     font-size: 14px;
