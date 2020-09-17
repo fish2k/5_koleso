@@ -260,7 +260,7 @@ i.rub {
 .header-main-inner {
   margin-left: -30px;
   margin-right: -30px;
-  background-color: var(--accent);
+  background-color: #4b4b4b;
   display: flex;
   justify-content: space-between;
 }
