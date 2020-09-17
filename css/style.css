@@ -2673,7 +2673,7 @@ i.rub {
   top: 16px;
   right: 8px;
 
-  color: var(--accent);
+  color: var(--red-light);
 
   display: none;
 }
