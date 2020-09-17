@@ -295,6 +295,23 @@
         order: 1;
     }
 
+    .order-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .order-step-2 .cart-content {
+        order: 2
+    }
+
+    .order-step-2 .cart-side {
+        order: 1
+    }
+
+    .order-step-2 .cart-block-sticky {
+        padding-bottom: 30px
+    }
+
     .cart-success-col {
         padding-left: 15px;
         padding-right: 15px;
@@ -556,11 +573,13 @@
 
     .cart-table-product-counter {
         overflow: hidden;
-        flex: 0 0 30px;
-        max-width: 30px;
-        height: 30px;
+        height: 40px;
 
-        border-radius: 5px;
+        flex: inherit;
+        max-width: inherit;
+        margin-left: 0;
+
+        border-radius: 25px;
     }
 
     .cart-table-product-count {
@@ -569,8 +588,37 @@
     }
 
     .cart-table-product-item {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        align-items: flex-start;
+
+        margin-bottom: 10px;
+    }
+
+    .cart-table-product {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid #dedfe0;
+    }
+
+    .cart-table-product:last-child {
+        border-bottom: none;
+    }
+
+    .cart-table-product-count {
+        flex: 0 0 90px;
+        max-width: 90px;
+    }
+
+    .cart-counter-item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .cart-counter-item:not(input) {
+        display: block;
     }
 
     .cart-table-product-price {
@@ -579,29 +627,42 @@
         padding-right: 0;
     }
 
-    .cart-table-product-photo {
+    /* .cart-table-product-photo {
         display: none;
+    } */
+
+    .cart-table-product-photo {
+        flex: 0 0 90px;
+        max-width: 90px;
+        height: 90px;
     }
 
     .cart-table-product-name {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-left: 0;
+        flex: 0 0 calc(100% - 90px);
+        max-width: calc(100% - 90px);
+        padding-left: 15px;
+        padding-right: 30px;
+        padding-top: 10px;
+        font-size: 14px;
+        height: auto;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
     }
 
     .cart-table-product-price-new {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .cart-table-product-price-old {
-        font-size: 12px;
+        font-size: 14px;
+        color: #999;
     }
 
     .cart-table-product-remove {
         width: 17px;
         height: 17px;
-        top: 8px;
-        right: -5px;
+        top: 0;
+        right: 0;
     }
 
     .cart-side-body {

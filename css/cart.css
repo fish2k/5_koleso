@@ -30,6 +30,10 @@
     padding-right: 15px;
 } */
 
+.btn-disabled {
+    pointer-events: none;
+}
+
 .cart-table-product-photo {
     flex: 0 0 65px;
     max-width: 65px;

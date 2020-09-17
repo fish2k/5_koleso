@@ -85,7 +85,9 @@ $(document).ready(function() {
                     window.activeMapMark = point,
                     
                     // перехват точки по ключу key.addr
-                    $('.cart-map-city').text(key.addr)
+                    $('.cart-map-city').text(key.addr);
+                    $('.cart-map-button').removeClass('btn-disabled')
+                    $('.cart-map-button').addClass('button-red')
 
                     point.options.set({
                         iconImageSize: [35, 35],
@@ -99,5 +101,10 @@ $(document).ready(function() {
                 key.pt1 && key.pt2 && cartMap.geoObjects.add(point)
             })
         })
+    })
+
+    $('.cart-map-button').click(function () {
+        $(this).text('Выбрано');
+        $(this).addClass('btn-disabled')
     })
 });
