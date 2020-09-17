@@ -2352,6 +2352,7 @@ i.rub {
 .header-fixed .header-main-inner {
   justify-content: unset;
   align-items: center;
+  position: relative;
 }
 
 .fixed-cart {
@@ -2377,8 +2378,21 @@ i.rub {
 
 .header-fixed .fixed-logo {
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--red-light);
+}
+
+.header-fixed .fixed-logo svg {
+  max-width: 35px;
 }
 
 .fixed-contacts-link {
@@ -2431,6 +2445,7 @@ i.rub {
 
 .header-fixed .fixed-contacts {
   display: flex;
+  margin-left: 60px;
 }
 
 .header-fixed .header-group {
@@ -2463,7 +2478,7 @@ i.rub {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 1px;
+  bottom: 0;
   width: 64px;
 
   display: flex;
@@ -2472,6 +2487,10 @@ i.rub {
   justify-content: center;
 
   background-color: var(--red-light);
+}
+
+.state-nav .header-responsive-logo {
+  bottom: 1px;
 }
 
 .header-responsive-logo svg {
