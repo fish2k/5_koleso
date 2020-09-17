@@ -270,7 +270,7 @@
           <script>
             const mainSlider = new Swiper('.slider-main', {
               slidesPerView: 1,
-              loop: false,
+              loop: true,
 
               on: {
                 init: function () {
@@ -279,8 +279,7 @@
               },
 
               pagination: {
-                el: '.slider-main-pagination',
-                type: 'fraction'
+                el: '.slider-main-pagination'
               },
 
               breakpoints: {
@@ -767,7 +766,7 @@
         <script>
           const brandSlider = new Swiper('.brands-slider', {
             slidesPerView: 5,
-            loop: false,
+            loop: true,
 
             on: {
               init: function () {

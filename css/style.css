@@ -2210,7 +2210,7 @@ i.rub {
   padding: 0px 48px 24px;
   z-index: 5;
   opacity: 0;
-  transition: all .3s ease;
+  /* transition: all .3s ease; */
   background-color: #fff;
 }
 
@@ -3310,6 +3310,7 @@ i.rub {
   text-align: center;
 
   padding-top: 97px;
+  padding-bottom: 143px;
   
   padding-left: 110px;
   padding-right: 125px;
@@ -4336,4 +4337,16 @@ select.addr-form-input {
 
 .filter-close::before {
   right: 0;
+}
+
+.car-type-change {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.car-type-change:hover {
+  background-color: var(--accent-hover);
+  color: #fff !important;
 }
