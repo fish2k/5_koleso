@@ -945,7 +945,7 @@
 
     width: 280px;
 
-    background-color: #4b4b4b;
+    background-color: var(--dark-light);
 
     display: flex;
     flex-direction: column;
@@ -1565,7 +1565,7 @@
   }
 
   .filter-link {
-    color: #4b4b4b;
+    color: var(--dark-light);
     font-size: 12px;
   }
 

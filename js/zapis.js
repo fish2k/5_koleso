@@ -65,6 +65,7 @@ $(document).ready(function () {
         $('.zapis-name').text($('#zapisName').val())
 
         $('.addr-success').addClass('active')
+        $('.app-zapis').addClass('success')
 
         $('.app-step-4').find('.app-step-name').text('Запись подтверждена!')
     })

@@ -254,7 +254,7 @@
     margin-left: 28px;
     font-weight: normal;
     text-decoration: none !important;
-    color: var(--accent) !important;
+    color: var(--red-light) !important;
     padding-left: 21px;
 
     background-image: url(../images/cart-pin.svg);
@@ -494,7 +494,7 @@ textarea.order-info-input {
     font-weight: var(--book);
     display: inline-flex;
     text-decoration: none !important;
-    color: var(--accent) !important;
+    color: var(--red-light) !important;
     position: relative;
     margin-bottom: 11px;
 }
@@ -732,7 +732,7 @@ textarea.order-info-input {
 .cart-map-select-inner {
     width: 555px;
     padding: 20px;
-    background-color: #4b4b4b;
+    background-color: var(--dark-light);
     color: #fff;
 
     display: flex;
@@ -845,16 +845,15 @@ em {
     color: var(--dark)
 }
 
-.cart-order-input:focus,
-.cart-order-input:hover {
-    border-color: var(--accent);
-    color: var(--accent)
+.cart-order-input:focus {
+    border-color: var(--red-light);
+    color: var(--red-light)
 }
 
-.cart-order-input:focus::placeholder,
+/* .cart-order-input:focus::placeholder,
 .cart-order-input:hover::placeholder {
     color: var(--accent)
-}
+} */
 
 .cart-order-input::placeholder {
     color: #a9a7a4;
@@ -894,9 +893,13 @@ em {
     padding-top: 3px;
 }
 
-.cart-order-agree .cart-content-check::before {
-    background-image: url(../images/modal-check.svg);
+.cart-order-agree a {
+    color: var(--red-light) !important
 }
+
+/* .cart-order-agree .cart-content-check::before {
+    background-image: url(../images/modal-check.svg);
+} */
 
 .order-button {
     font-weight: var(--book);
