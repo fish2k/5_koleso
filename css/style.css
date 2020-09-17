@@ -17,6 +17,11 @@
   --red-light: #fc352e;
 }
 
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
 /* overlay masks */
 [class*=state-] {
   overflow: hidden;
